@@ -2,9 +2,14 @@
   "componentsCatalogue": "2",
   "metadata": {
     "license": "CC-BY-4.0",
-    "copyright": "TODO: 著作権者を作者が書く",
-    "creators": [],
-    "citations": { "style": "sist02", "list": "end" }
+    "copyright": "© 2026 雲居玄道",
+    "creators": [
+      "雲居玄道"
+    ],
+    "citations": {
+      "style": "sist02",
+      "list": "end"
+    }
   },
   "article": {
     "chapters": [

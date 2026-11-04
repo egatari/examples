@@ -2,10 +2,15 @@
   "componentsCatalogue": "2",
   "metadata": {
     "license": "CC-BY-4.0",
-    "copyright": "TODO（作者が書く）",
-    "creators": ["TODO（作者が書く）"],
+    "copyright": "© 2026 雲居玄道（読みの手引き・注・コラム・表・スライド・台本。本文を除く）",
+    "creators": [
+      "雲居玄道"
+    ],
     "attribution": "本文：芥川龍之介「羅生門」（青空文庫。著作権の保護期間満了）。読みの手引き・表・コラム・脚注・スライド・台本：CC BY 4.0",
-    "citations": { "style": "sist02", "list": "end" }
+    "citations": {
+      "style": "sist02",
+      "list": "end"
+    }
   },
   "articleLinks": {
     "s-mznudg": {
