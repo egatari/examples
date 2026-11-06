@@ -2,10 +2,11 @@
   "componentsCatalogue": "2",
   "metadata": {
     "license": "CC-BY-4.0",
-    "copyright": "© 2026 雲居玄道",
+    "copyright": "© 2026 雲居玄道 (slides, script and book; excluding the Egatari logo)",
     "creators": [
       "雲居玄道"
-    ]
+    ],
+    "attribution": "The Egatari logo (themes/egatari-brand/egatari-logo.svg) is not covered by CC BY 4.0. See themes/egatari-brand/LICENSE.md."
   },
   "article": {
     "chapters": [
