@@ -1,1 +1,2 @@
-/* default（藍）に Egatari のロゴだけを足す */
+/* default（藍）を土台に、Egatari のロゴの色を足す（CM の最後でロゴを描くため） */
+:root { --brand-ink: #4A488E; --brand-sun: #D3381C; }

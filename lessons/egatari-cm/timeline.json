@@ -30,7 +30,12 @@
   "pad_after": 0
  },
  "s-fmdlgo:0": {
-  "dur": 2.5,
+  "dur": 0.3,
+  "lead": 0,
+  "pad_after": 0
+ },
+ "s-fmdlgo:1": {
+  "dur": 2.2,
   "lead": 0,
   "pad_after": 0
  }

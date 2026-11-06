@@ -38,7 +38,13 @@
   },
   "s-fmdlgo:0": {
    "file": "bgm_6.wav",
-   "dur": 2.5,
+   "dur": 0.3,
+   "cues": [],
+   "kind": "imported"
+  },
+  "s-fmdlgo:1": {
+   "file": "bgm_7.wav",
+   "dur": 2.2,
    "cues": [],
    "kind": "imported"
   }
