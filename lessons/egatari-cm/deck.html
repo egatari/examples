@@ -24,6 +24,7 @@
 .cm-gather .c-line { border: 4px solid var(--term); } .cm-gather .c-tab { border: 3px solid var(--accent2); }
 .cover .logos { left: 0; right: 0; top: 36px; bottom: auto; justify-content: center; }
 .cover .logos img { height: 130px; }
+.cm-big { font-size: 44px; font-weight: 700; }
 </style>
 </head>
 <body>
@@ -90,26 +91,26 @@
 <section class="slide noconcl" id="s-bllpfp">
   <h2>語る順に、ここで止まる</h2>
   <div class="body">
-    <m-flow style="height:240px" aria-label="申請、受付、確認、承認の流れ。確認で止まっている">
+    <m-flow style="height:300px" size="48" aria-label="申請、受付、確認、承認の流れ。確認で止まっている">
       <script type="application/json">{"nodes": [
-        {"id": "a", "label": "申請", "x": 0, "y": 40, "w": 230, "h": 130, "step": 1, "at": 0},
-        {"id": "b", "label": "受付", "x": 318, "y": 40, "w": 230, "h": 130, "step": 1, "at": 0.625},
-        {"id": "c", "label": "確認", "x": 636, "y": 40, "w": 230, "h": 130, "step": 1, "at": 1.25, "tone": "emph"},
-        {"id": "d", "label": "承認", "x": 954, "y": 40, "w": 230, "h": 130, "step": 1, "at": 1.875}
+        {"id": "a", "label": "申請", "x": 0, "y": 30, "w": 250, "h": 200, "step": 1, "at": 0},
+        {"id": "b", "label": "受付", "x": 311, "y": 30, "w": 250, "h": 200, "step": 1, "at": 0.625},
+        {"id": "c", "label": "確認", "x": 622, "y": 30, "w": 250, "h": 200, "step": 1, "at": 1.25, "tone": "emph"},
+        {"id": "d", "label": "承認", "x": 933, "y": 30, "w": 250, "h": 200, "step": 1, "at": 1.875}
       ], "edges": [
         {"from": "a", "to": "b", "step": 1, "at": 0.3},
         {"from": "b", "to": "c", "step": 1, "at": 0.95},
         {"from": "c", "to": "d", "step": 1, "at": 1.6, "dash": true}
       ]}</script>
     </m-flow>
-    <p class="note" data-mark="stop">平均待ち 5.0 日（架空）</p>
+    <p class="cm-big" data-mark="stop">平均待ち 5.0 日（架空）</p>
   </div>
 </section>
 
 <section class="slide noconcl" id="s-e25tve">
   <h2>改善すると、こう変わる</h2>
   <div class="body">
-    <m-curves style="height:380px" xr="[6,11.5]" yr="[0,6]" xt="[6,7,8,9,10]" yt="[0,2,4,6]" xl="1 日の申請（件）" yl="平均待ち（日）" aria-label="1 日の申請と平均待ちの曲線。処理を 2 割速くすると、9.8 件のときの待ちが 5.0 日から 0.45 日になる（架空）">
+    <m-curves style="height:310px;zoom:1.4;width:846px" xr="[6,11.5]" yr="[0,6]" xt="[6,7,8,9,10]" yt="[0,2,4,6]" xl="1 日の申請（件）" yl="平均待ち（日）" aria-label="1 日の申請と平均待ちの曲線。処理を 2 割速くすると、9.8 件のときの待ちが 5.0 日から 0.45 日になる（架空）">
       <script type="application/json">{{JSON:curves.json}}</script>
     </m-curves>
   </div>
