@@ -22,10 +22,16 @@
 .cm-gather .c-emph { background: var(--emph); } .cm-gather .c-term { background: var(--term); }
 .cm-gather .c-acc { background: var(--accent2); } .cm-gather .c-title { background: var(--title); }
 .cm-gather .c-line { border: 4px solid var(--term); } .cm-gather .c-tab { border: 3px solid var(--accent2); }
-.cover .cm-logo { position: absolute; left: 50%; top: 90px; transform: translateX(-50%); }
+.cover .cm-logo { position: absolute; left: calc(50% - 95px); top: 90px; }
 .cover h1 { top: 300px; }
 .cover .au { top: 470px; }
 .cm-big { font-size: 44px; font-weight: 700; }
+.cm-gather .g { position: absolute; width: 96px; height: 60px; display: block; }
+.cm-pale { fill: color-mix(in srgb, var(--term) 22%, var(--bg)); stroke: var(--term); stroke-width: 3; }
+.cm-pale-e { fill: color-mix(in srgb, var(--emph) 22%, var(--bg)); stroke: var(--emph); stroke-width: 3; }
+.cm-slots { position: relative; height: 300px; }
+.cm-slots .slot { position: absolute; top: 30px; width: 250px; height: 200px; border-radius: 12px; background: color-mix(in srgb, var(--term) 12%, var(--bg)); }
+.cm-slots m-flow { position: absolute; left: 0; top: 0; width: 100%; }
 </style>
 </head>
 <body>
@@ -89,10 +95,30 @@
   </div>
 </section>
 
-<section class="slide noconcl" id="s-bllpfp">
+<section class="slide noconcl static" data-morph id="s-htits5">
+  <h2>語りの形に変える</h2>
+  <div class="body">
+    <div class="cm-gather">
+      <svg viewBox="0 0 420 420" width="420" height="420" aria-hidden="true">
+        <path d="M150 40H50V260 M270 380H370V160" style="fill:none;stroke:var(--title);stroke-width:22"/>
+      </svg>
+      <span class="g" data-id="p4" style="left:500px;top:160px"><svg width="96" height="60" viewBox="0 0 96 60" aria-hidden="true"><rect class="cm-pale-e" x="4" y="14" width="88" height="32" rx="8"/></svg></span>
+      <span class="g" data-id="p7" style="left:612px;top:160px"><svg width="96" height="60" viewBox="0 0 96 60" aria-hidden="true"><rect x="6" y="34" width="18" height="22" class="cm-pale"/><rect x="38" y="20" width="18" height="36" class="cm-pale"/><rect x="70" y="6" width="18" height="50" class="cm-pale-e"/></svg></span>
+      <span class="g" data-id="p11" style="left:500px;top:250px"><svg width="96" height="60" viewBox="0 0 96 60" aria-hidden="true"><path d="M6 54Q50 52 70 34T92 4" class="cm-pale" style="fill:none"/></svg></span>
+      <span class="g" data-id="p12" style="left:612px;top:250px"><svg width="96" height="60" viewBox="0 0 96 60" aria-hidden="true"><rect class="cm-pale" x="4" y="14" width="88" height="32" rx="8"/></svg></span>
+    </div>
+  </div>
+</section>
+
+<section class="slide noconcl" data-morph id="s-bllpfp">
   <h2>語る順に、ここで止まる</h2>
   <div class="body">
-    <m-flow style="height:300px" size="48" aria-label="申請、受付、確認、承認の流れ。確認で止まっている">
+    <div class="cm-slots">
+      <div class="slot" data-id="p4" style="left:0px"></div>
+      <div class="slot" data-id="p7" style="left:311px"></div>
+      <div class="slot" data-id="p11" style="left:622px"></div>
+      <div class="slot" data-id="p12" style="left:933px"></div>
+      <m-flow style="height:300px" size="48" aria-label="申請、受付、確認、承認の流れ。確認で止まっている">
       <script type="application/json">{"nodes": [
         {"id": "a", "label": "申請", "x": 0, "y": 30, "w": 250, "h": 200, "step": 1, "at": 0},
         {"id": "b", "label": "受付", "x": 311, "y": 30, "w": 250, "h": 200, "step": 1, "at": 0.625},
@@ -104,6 +130,7 @@
         {"from": "c", "to": "d", "step": 1, "at": 1.6, "dash": true}
       ]}</script>
     </m-flow>
+    </div>
     <p class="cm-big" data-mark="stop">平均待ち 5.0 日（架空）</p>
   </div>
 </section>

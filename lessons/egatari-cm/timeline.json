@@ -5,17 +5,22 @@
   "pad_after": 0
  },
  "s-7xootv:0": {
-  "dur": 2.5,
+  "dur": 1.25,
+  "lead": 0,
+  "pad_after": 0
+ },
+ "s-htits5:0": {
+  "dur": 1.25,
   "lead": 0,
   "pad_after": 0
  },
  "s-bllpfp:0": {
-  "dur": 0.625,
+  "dur": 1.25,
   "lead": 0,
   "pad_after": 0
  },
  "s-bllpfp:1": {
-  "dur": 3.125,
+  "dur": 2.5,
   "lead": 0,
   "pad_after": 0
  },

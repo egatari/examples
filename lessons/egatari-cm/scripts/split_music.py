@@ -6,7 +6,7 @@ length with lead 0 and pad_after 0 (spec §5.5). Usage: python3 scripts/split_mu
 """
 import json, subprocess, sys
 src = sys.argv[1]
-SEGS = [("s-kp7qne:0", 0, 2.5), ("s-7xootv:0", 2.5, 5.0), ("s-bllpfp:0", 5.0, 5.625), ("s-bllpfp:1", 5.625, 8.75),
+SEGS = [("s-kp7qne:0", 0, 2.5), ("s-7xootv:0", 2.5, 3.75), ("s-htits5:0", 3.75, 5.0), ("s-bllpfp:0", 5.0, 6.25), ("s-bllpfp:1", 6.25, 8.75),
         ("s-e25tve:0", 8.75, 9.375), ("s-e25tve:1", 9.375, 12.5), ("s-fmdlgo:0", 12.5, 12.8), ("s-fmdlgo:1", 12.8, 15.0)]
 man, tl = {"segments": {}}, {}
 for i, (k, a, b) in enumerate(SEGS):
