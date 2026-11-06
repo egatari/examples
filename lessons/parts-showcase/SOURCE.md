@@ -21,3 +21,7 @@ Themes: default (藍), sumi (墨), kokugo (国語), tokiwa (常盤), murasaki (�
 **How it was made:** `fragments/NN-<part>.html|md` hold one slide each, and `scripts/assemble.py` joined them once, before ids were given. After assembly, `deck.html` was edited by hand: the menu layout, and the preview map slide (no concl line, so the map can be taller). Edit `deck.html` directly from now on, and don't re-run the assembly.
 
 **Rights:** CC BY 4.0, © 2026 雲居玄道, except the classical texts (孟浩然「春暁」, 清少納言『枕草子』, public domain) and the procedures taken from public sources: 厚生労働省「正しい手洗いの方法」, 首相官邸「防災の手引き」, 平成 26 年版 防災白書 (all 加工して作成). Kana stroke shapes: strokesvg (Klee One, SIL OFL 1.1). All other topics and numbers are fictional.
+
+**Licence files:** `LICENSES/strokesvg-OFL.txt` (SIL OFL 1.1 with the Klee One / strokesvg copyright lines) and `LICENSES/strokesvg-LICENSE.txt` cover the kana stroke shapes that m-kakijun carries inside the built file.
+
+**Names:** organisations and places in fictional topics are not real municipalities or companies. The org chart uses 「A 市」; みどり市 was dropped because it is a real city (群馬県).
