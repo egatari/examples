@@ -2,11 +2,10 @@
   "componentsCatalogue": "2",
   "metadata": {
     "license": "CC-BY-4.0",
-    "copyright": "© 2026 雲居玄道（スライド・台本・本。Egatari のロゴを除く）",
+    "copyright": "© 2026 雲居玄道",
     "creators": [
       "雲居玄道"
-    ],
-    "attribution": "Egatari のロゴ（themes/egatari-brand/egatari-logo.svg）は CC BY 4.0 の対象外。使ってよい範囲は themes/egatari-brand/LICENSE.md。"
+    ]
   },
   "article": {
     "chapters": [
