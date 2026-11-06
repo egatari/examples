@@ -1,0 +1,6 @@
+{
+  "name": "egatari-brand",
+  "version": "1.0.0",
+  "extends": "default",
+  "logos": ["egatari-logo.svg"]
+}
