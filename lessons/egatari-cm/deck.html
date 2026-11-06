@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="egatari-brand">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Egatari 15 秒</title>
+<style>
+.cm-cram { display: grid; grid-template-columns: 1.15fr 1fr; gap: 14px 22px; }
+.cm-cram .cm-fl { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.cm-cram .cm-bx { border: 2px solid var(--line); border-radius: 6px; padding: 2px 10px; }
+.cm-cram table { border-collapse: collapse; }
+.cm-cram td { border: 1px solid var(--line); padding: 0 10px; }
+.cm-cram .cm-nt { border-left: 4px solid var(--emph); padding-left: 10px; margin: 0; }
+.cm-gather { position: relative; height: 470px; }
+.cm-gather svg { position: absolute; left: 50%; top: 0; transform: translateX(-50%); }
+.cm-gather .cm-chip { position: absolute; width: 60px; height: 26px; border: 2px solid var(--line); border-radius: 4px; }
+.cover .logos { left: 0; right: 0; top: 36px; bottom: auto; justify-content: center; }
+.cover .logos img { height: 130px; }
+</style>
+</head>
+<body>
+<div id="stage">
+
+<section class="slide noconcl static" id="s-kp7qne">
+  <h2>全部のせると、</h2>
+  <div class="body">
+    <div class="cm-cram">
+      <div>
+        <div class="cm-fl">
+          <span class="cm-bx" data-id="f1">申請</span>→<span class="cm-bx" data-id="f2">受付</span>→<span class="cm-bx" data-id="f3">確認</span>→<span class="cm-bx" data-id="f4">承認</span>→<span class="cm-bx" data-id="f5">通知</span>
+        </div>
+        <p class="cm-nt" data-id="n1">※確認は 1 人で担当。書類の不足は差し戻し（平均 2 回）</p>
+        <p class="cm-nt" data-id="n2">※繁忙期は申請が 1 日 10 件近くに増える</p>
+        <p class="cm-nt" data-id="n3">※改善案：確認の手順を見直し、処理を 2 割速くする</p>
+      </div>
+      <div>
+        <table data-id="t1">
+          <tr><td>1 日の申請</td><td>9.8 件</td></tr>
+          <tr><td>1 日の処理</td><td>10 件</td></tr>
+          <tr><td>平均待ち</td><td><b>5.0 日</b></td></tr>
+          <tr><td>改善後の処理</td><td>12 件</td></tr>
+        </table>
+        <p class="cm-nt" data-id="n4">※数字はすべて架空</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide noconcl static" data-morph id="s-7xootv">
+  <h2>伝わらない。</h2>
+  <div class="body">
+    <div class="cm-gather">
+      <svg viewBox="0 0 420 420" width="420" height="420" aria-hidden="true">
+        <path d="M150 40H50V260 M270 380H370V160" style="fill:none;stroke:var(--title);stroke-width:22"/>
+      </svg>
+      <span class="cm-chip" data-id="f1" style="left:520px;top:150px"></span>
+      <span class="cm-chip" data-id="f2" style="left:560px;top:170px"></span>
+      <span class="cm-chip" data-id="f3" style="left:600px;top:190px"></span>
+      <span class="cm-chip" data-id="f4" style="left:540px;top:210px"></span>
+      <span class="cm-chip" data-id="f5" style="left:580px;top:230px"></span>
+      <span class="cm-chip" data-id="n1" style="left:530px;top:250px"></span>
+      <span class="cm-chip" data-id="n2" style="left:590px;top:160px"></span>
+      <span class="cm-chip" data-id="n3" style="left:550px;top:270px"></span>
+      <span class="cm-chip" data-id="t1" style="left:600px;top:240px"></span>
+      <span class="cm-chip" data-id="n4" style="left:570px;top:200px"></span>
+    </div>
+  </div>
+</section>
+
+<section class="slide noconcl" id="s-bllpfp">
+  <h2>語る順に、ここで止まる</h2>
+  <div class="body">
+    <m-flow style="height:240px" aria-label="申請、受付、確認、承認の流れ。確認で止まっている">
+      <script type="application/json">{"nodes": [
+        {"id": "a", "label": "申請", "x": 0, "y": 40, "w": 230, "h": 130, "step": 1, "at": 0},
+        {"id": "b", "label": "受付", "x": 318, "y": 40, "w": 230, "h": 130, "step": 1, "at": 0.625},
+        {"id": "c", "label": "確認", "x": 636, "y": 40, "w": 230, "h": 130, "step": 1, "at": 1.25, "tone": "emph"},
+        {"id": "d", "label": "承認", "x": 954, "y": 40, "w": 230, "h": 130, "step": 1, "at": 1.875}
+      ], "edges": [
+        {"from": "a", "to": "b", "step": 1, "at": 0.3},
+        {"from": "b", "to": "c", "step": 1, "at": 0.95},
+        {"from": "c", "to": "d", "step": 1, "at": 1.6, "dash": true}
+      ]}</script>
+    </m-flow>
+    <p class="note" data-mark="stop">平均待ち 5.0 日（架空）</p>
+  </div>
+</section>
+
+<section class="slide noconcl" id="s-e25tve">
+  <h2>改善すると、こう変わる</h2>
+  <div class="body">
+    <m-curves style="height:380px" xr="[6,10]" yr="[0,6]" xt="[6,7,8,9,10]" yt="[0,2,4,6]" xl="1 日の申請（件）" yl="平均待ち（日）" aria-label="1 日の申請と平均待ちの曲線。処理を 2 割速くすると、9.8 件のときの待ちが 5.0 日から 0.45 日になる（架空）">
+      <script type="application/json">{{JSON:curves.json}}</script>
+    </m-curves>
+  </div>
+</section>
+
+<section class="slide cover noconcl static" id="s-fmdlgo">
+  <h1>絵が語り、人へ伝える</h1>
+  <div class="au">伝える人すべてのための、1 つのファイル。<br><span class="muted">egatari.org</span></div>
+</section>
+
+</div>
+</body>
+</html>

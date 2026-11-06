@@ -1,0 +1,37 @@
+{
+ "s-kp7qne:0": {
+  "dur": 2.5,
+  "lead": 0,
+  "pad_after": 0
+ },
+ "s-7xootv:0": {
+  "dur": 2.5,
+  "lead": 0,
+  "pad_after": 0
+ },
+ "s-bllpfp:0": {
+  "dur": 0.625,
+  "lead": 0,
+  "pad_after": 0
+ },
+ "s-bllpfp:1": {
+  "dur": 3.125,
+  "lead": 0,
+  "pad_after": 0
+ },
+ "s-e25tve:0": {
+  "dur": 0.625,
+  "lead": 0,
+  "pad_after": 0
+ },
+ "s-e25tve:1": {
+  "dur": 3.125,
+  "lead": 0,
+  "pad_after": 0
+ },
+ "s-fmdlgo:0": {
+  "dur": 2.5,
+  "lead": 0,
+  "pad_after": 0
+ }
+}
