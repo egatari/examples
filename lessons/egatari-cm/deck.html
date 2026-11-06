@@ -5,15 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Egatari 15 秒</title>
 <style>
-.cm-cram { display: grid; grid-template-columns: 1.15fr 1fr; gap: 14px 22px; }
-.cm-cram .cm-fl { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.cm-cram .cm-bx { border: 2px solid var(--line); border-radius: 6px; padding: 2px 10px; }
-.cm-cram table { border-collapse: collapse; }
-.cm-cram td { border: 1px solid var(--line); padding: 0 10px; }
-.cm-cram .cm-nt { border-left: 4px solid var(--emph); padding-left: 10px; margin: 0; }
-.cm-gather { position: relative; height: 470px; }
-.cm-gather svg { position: absolute; left: 50%; top: 0; transform: translateX(-50%); }
-.cm-gather .cm-chip { position: absolute; width: 60px; height: 26px; border: 2px solid var(--line); border-radius: 4px; }
+.cm-pon { position: relative; height: 530px; }
+.cm-pon > * { position: absolute; margin: 0; width: max-content; white-space: nowrap; }
+.cm-pon .k { border-radius: 10px; padding: 4px 14px; font-weight: 700; }
+.cm-pon .solid-emph { background: var(--emph); color: var(--bg); }
+.cm-pon .solid-term { background: var(--term); color: var(--bg); }
+.cm-pon .solid-acc { background: var(--accent2); color: var(--bg); }
+.cm-pon .solid-title { background: var(--title); color: var(--bg); }
+.cm-pon .line-term { border: 4px solid var(--term); background: var(--bg); }
+.cm-pon .arr { color: var(--term); font-weight: 700; }
+.cm-pon table { border-collapse: collapse; background: var(--bg); }
+.cm-pon td { border: 2px solid var(--accent2); padding: 0 10px; }
+.cm-gather { position: relative; height: 548px; }
+.cm-gather svg { position: absolute; left: 50%; top: 40px; transform: translateX(-50%); }
+.cm-gather .c { position: absolute; width: 64px; height: 28px; border-radius: 6px; }
+.cm-gather .c-emph { background: var(--emph); } .cm-gather .c-term { background: var(--term); }
+.cm-gather .c-acc { background: var(--accent2); } .cm-gather .c-title { background: var(--title); }
+.cm-gather .c-line { border: 4px solid var(--term); } .cm-gather .c-tab { border: 3px solid var(--accent2); }
 .cover .logos { left: 0; right: 0; top: 36px; bottom: auto; justify-content: center; }
 .cover .logos img { height: 130px; }
 </style>
@@ -24,24 +32,31 @@
 <section class="slide noconcl static" id="s-kp7qne">
   <h2>全部のせると、</h2>
   <div class="body">
-    <div class="cm-cram">
-      <div>
-        <div class="cm-fl">
-          <span class="cm-bx" data-id="f1">申請</span>→<span class="cm-bx" data-id="f2">受付</span>→<span class="cm-bx" data-id="f3">確認</span>→<span class="cm-bx" data-id="f4">承認</span>→<span class="cm-bx" data-id="f5">通知</span>
-        </div>
-        <p class="cm-nt" data-id="n1">※確認は 1 人で担当。書類の不足は差し戻し（平均 2 回）</p>
-        <p class="cm-nt" data-id="n2">※繁忙期は申請が 1 日 10 件近くに増える</p>
-        <p class="cm-nt" data-id="n3">※改善案：確認の手順を見直し、処理を 2 割速くする</p>
-      </div>
-      <div>
-        <table data-id="t1">
-          <tr><td>1 日の申請</td><td>9.8 件</td></tr>
-          <tr><td>1 日の処理</td><td>10 件</td></tr>
-          <tr><td>平均待ち</td><td><b>5.0 日</b></td></tr>
-          <tr><td>改善後の処理</td><td>12 件</td></tr>
-        </table>
-        <p class="cm-nt" data-id="n4">※数字はすべて架空</p>
-      </div>
+    <div class="cm-pon">
+      <p class="k solid-title" data-id="p1" style="left:0;top:0">申請の確認が遅い！ 原因と改善案（案）</p>
+      <span class="k solid-term" data-id="p2" style="left:0;top:78px">申請</span>
+      <span class="arr" style="left:98px;top:82px">→</span>
+      <span class="k solid-term" data-id="p3" style="left:136px;top:78px">受付</span>
+      <span class="arr" style="left:234px;top:82px">→</span>
+      <span class="k solid-emph" data-id="p4" style="left:272px;top:78px">確認</span>
+      <span class="arr" style="left:370px;top:82px">→</span>
+      <span class="k solid-term" data-id="p5" style="left:408px;top:78px">承認</span>
+      <span class="arr" style="left:506px;top:82px">→</span>
+      <span class="k solid-term" data-id="p6" style="left:544px;top:78px">通知</span>
+      <p class="k solid-emph" data-id="p7" style="left:690px;top:6px;transform:rotate(-6deg);font-size:44px;padding:10px 22px">平均待ち 5.0 日！！</p>
+      <p class="k solid-acc" data-id="p8" style="left:0;top:160px;transform:rotate(-2deg)">確認は 1 人だけ</p>
+      <p class="k solid-acc" data-id="p9" style="left:250px;top:176px;transform:rotate(2deg)">書類不足で差し戻し（平均 2 回）</p>
+      <p class="k solid-acc" data-id="p10" style="left:40px;top:250px;transform:rotate(1deg)">繁忙期は 1 日 10 件近く</p>
+      <table data-id="p11" style="left:760px;top:150px">
+        <tr><td>1 日の申請</td><td>9.8 件</td></tr>
+        <tr><td>1 日の処理</td><td>10 件</td></tr>
+        <tr><td>平均待ち</td><td><b>5.0 日</b></td></tr>
+        <tr><td>改善後の処理</td><td>12 件</td></tr>
+      </table>
+      <p class="k line-term" data-id="p12" style="left:0;top:350px">改善案：確認の手順を見直して、処理を 2 割速く → 待ちはどうなる？</p>
+      <p class="k solid-emph" data-id="p13" style="left:420px;top:262px;transform:rotate(-4deg)">要検討！</p>
+      <p class="k solid-title" data-id="p14" style="left:0;top:440px">次回までに：担当の配置／書類の様式／予約制</p>
+      <p data-id="p15" style="left:900px;top:470px;color:var(--muted)">※数字はすべて架空</p>
     </div>
   </div>
 </section>
@@ -53,16 +68,21 @@
       <svg viewBox="0 0 420 420" width="420" height="420" aria-hidden="true">
         <path d="M150 40H50V260 M270 380H370V160" style="fill:none;stroke:var(--title);stroke-width:22"/>
       </svg>
-      <span class="cm-chip" data-id="f1" style="left:520px;top:150px"></span>
-      <span class="cm-chip" data-id="f2" style="left:560px;top:170px"></span>
-      <span class="cm-chip" data-id="f3" style="left:600px;top:190px"></span>
-      <span class="cm-chip" data-id="f4" style="left:540px;top:210px"></span>
-      <span class="cm-chip" data-id="f5" style="left:580px;top:230px"></span>
-      <span class="cm-chip" data-id="n1" style="left:530px;top:250px"></span>
-      <span class="cm-chip" data-id="n2" style="left:590px;top:160px"></span>
-      <span class="cm-chip" data-id="n3" style="left:550px;top:270px"></span>
-      <span class="cm-chip" data-id="t1" style="left:600px;top:240px"></span>
-      <span class="cm-chip" data-id="n4" style="left:570px;top:200px"></span>
+      <span class="c c-title" data-id="p1" style="left:541px;top:168px"></span>
+      <span class="c c-term" data-id="p2" style="left:550px;top:142px"></span>
+      <span class="c c-term" data-id="p3" style="left:509px;top:267px"></span>
+      <span class="c c-emph" data-id="p4" style="left:512px;top:223px"></span>
+      <span class="c c-term" data-id="p5" style="left:574px;top:144px"></span>
+      <span class="c c-term" data-id="p6" style="left:616px;top:259px"></span>
+      <span class="c c-emph" data-id="p7" style="left:527px;top:139px"></span>
+      <span class="c c-acc" data-id="p8" style="left:511px;top:241px"></span>
+      <span class="c c-acc" data-id="p9" style="left:553px;top:147px"></span>
+      <span class="c c-acc" data-id="p10" style="left:530px;top:153px"></span>
+      <span class="c c-tab" data-id="p11" style="left:570px;top:238px"></span>
+      <span class="c c-line" data-id="p12" style="left:507px;top:274px"></span>
+      <span class="c c-emph" data-id="p13" style="left:515px;top:187px"></span>
+      <span class="c c-title" data-id="p14" style="left:580px;top:290px"></span>
+      <span class="c c-line" data-id="p15" style="left:574px;top:145px"></span>
     </div>
   </div>
 </section>
@@ -89,7 +109,7 @@
 <section class="slide noconcl" id="s-e25tve">
   <h2>改善すると、こう変わる</h2>
   <div class="body">
-    <m-curves style="height:380px" xr="[6,10]" yr="[0,6]" xt="[6,7,8,9,10]" yt="[0,2,4,6]" xl="1 日の申請（件）" yl="平均待ち（日）" aria-label="1 日の申請と平均待ちの曲線。処理を 2 割速くすると、9.8 件のときの待ちが 5.0 日から 0.45 日になる（架空）">
+    <m-curves style="height:380px" xr="[6,11.5]" yr="[0,6]" xt="[6,7,8,9,10]" yt="[0,2,4,6]" xl="1 日の申請（件）" yl="平均待ち（日）" aria-label="1 日の申請と平均待ちの曲線。処理を 2 割速くすると、9.8 件のときの待ちが 5.0 日から 0.45 日になる（架空）">
       <script type="application/json">{{JSON:curves.json}}</script>
     </m-curves>
   </div>
