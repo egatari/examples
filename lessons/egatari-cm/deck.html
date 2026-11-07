@@ -25,7 +25,9 @@
 .cover .cm-logo { position: absolute; left: calc(50% - 95px); top: 90px; }
 .cover h1 { top: 300px; }
 .cover .au { top: 470px; }
-.cm-big { font-size: 44px; font-weight: 700; }
+.cm-big { font-size: 44px; font-weight: 700; margin: 0; padding: 14px 22px; }
+.cm-stop { position: relative; display: inline-block; margin-top: 12px; }
+.cm-stop svg { position: absolute; left: 0; top: 0; }
 .cm-gather .g { position: absolute; width: 96px; height: 60px; display: block; }
 .cm-pale { fill: color-mix(in srgb, var(--term) 22%, var(--bg)); stroke: var(--term); stroke-width: 3; }
 .cm-pale-e { fill: color-mix(in srgb, var(--emph) 22%, var(--bg)); stroke: var(--emph); stroke-width: 3; }
@@ -131,7 +133,10 @@
       ]}</script>
     </m-flow>
     </div>
-    <p class="cm-big" data-mark="stop">平均待ち 5.0 日（架空）</p>
+    <div class="cm-stop">
+      <p class="cm-big">平均待ち 5.0 日（架空）</p>
+      <svg data-step="1" viewBox="0 0 520 90" width="520" height="90" aria-hidden="true"><rect class="draw" pathLength="1" data-at="1.4" x="4" y="4" width="512" height="82" rx="14" style="fill:none;stroke:var(--emph);stroke-width:5"/></svg>
+    </div>
   </div>
 </section>
 
