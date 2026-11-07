@@ -69,7 +69,7 @@
         {"from": "b", "to": "d", "step": 3}, {"from": "c", "to": "d", "step": 3, "dash": true}
       ]}</script>
     </m-flow>
-    <p class="note" data-step="4">パスワードは使い回さない。定期的に変える必要はなく、漏れたときにすぐ変える</p>
+    <p class="note" data-step="4">パスワードは使い回さない。定期的に変える必要はなく、漏れたと分かったらすぐ変える</p>
   </div>
   <div class="concl"><span>パスワードが漏れても、もう 1 つの鍵が守る</span></div>
 </section>
@@ -81,7 +81,7 @@
       <script type="application/json">{"cards": [
         {"icon": "file", "title": "要らない情報は入れない", "text": "持ち運ぶ必要のない機密・個人情報"},
         {"icon": "lock", "title": "暗号化する", "text": "落としても読めないように"},
-        {"icon": "shield-check", "title": "会社の USB だけ", "text": "個人のものや持ち主不明のものは使わない"},
+        {"icon": "shield-check", "title": "USB は原則使わない", "text": "受け渡しは会社が認めた方法で"},
         {"icon": "alert-triangle", "title": "置き忘れに注意", "text": "カバンや端末から目を離さない"}
       ]}</script>
     </m-cards>
@@ -111,7 +111,7 @@
   <h2>確認テスト</h2>
   <div class="body">
     <m-predict style="height:380px" unit="人" aria-label="パスワードはいつ変えるかを選ぶ。正解は、漏れたときにすぐ変える">
-      <script type="application/json">{"question": "会社のパスワードは、いつ変える？", "choices": [{"label": "3 か月ごとに必ず変える"}, {"label": "漏れたときに、すぐ変える"}, {"label": "一度決めたら変えない"}], "answer": 1, "counts": [17, 9, 4], "note": "定期的に変えると、作り方が単純になりやすい（人数は架空）"}</script>
+      <script type="application/json">{"question": "会社のパスワードは、いつ変える？", "choices": [{"label": "3 か月ごとに必ず変える"}, {"label": "漏れたと分かったら、すぐ変える"}, {"label": "一度決めたら変えない"}], "answer": 1, "counts": [17, 9, 4], "note": "サービスからの知らせ・ブラウザの警告・偽サイトに入力した、で分かる（人数は架空）"}</script>
     </m-predict>
   </div>
   <div class="concl"><span>定期的な変更より、使い回さないことが大事</span></div>
@@ -127,7 +127,7 @@
         {"icon": "message", "title": "すぐ報告", "text": "迷ったら情報システム部へ"}
       ]}</script>
     </m-cards>
-    <p class="note">出典：総務省「国民のためのサイバーセキュリティサイト」事前対策（システムを利用する人向けの対策）をもとに加工して作成</p>
+    <p class="note">出典：総務省「国民のためのサイバーセキュリティサイト」事前対策（システムを利用する人向けの対策）、NIST SP 800-63B をもとに加工して作成</p>
   </div>
   <div class="concl"><span>1 人ひとりの注意が、会社を守る</span></div>
 </section>
