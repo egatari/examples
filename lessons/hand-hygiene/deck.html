@@ -17,13 +17,13 @@
 <section class="slide" id="s-2jmbv3">
   <h2>5 つのタイミング</h2>
   <div class="body">
-    <m-cards style="height:330px" nums="true" per-step="1" aria-label="手指衛生の 5 つのタイミング：入所者に触る前、ケアを行う前、体液に触れた後、入所者に触れた後、部屋の環境に触れた後">
+    <m-cards style="height:420px" layout="grid" nums="true" per-step="1" aria-label="手指衛生の 5 つのタイミング：入所者に触る前、ケアを行う前、体液に触れた後、入所者に触れた後、部屋の環境に触れた後">
       <script type="application/json">{"cards": [
-        {"icon": "hand-click", "title": "入所者に触る前"},
-        {"icon": "first-aid-kit", "title": "ケアを行う前"},
-        {"icon": "droplet", "title": "体液に触れた後"},
-        {"icon": "users", "title": "入所者に触れた後"},
-        {"icon": "home", "title": "部屋の環境に触れた後"}
+        {"icon": "hand-click", "title": "入所者に触る前", "text": "あいさつで肩に触れる前も"},
+        {"icon": "first-aid-kit", "title": "ケアを行う前", "text": "食事・口腔ケア・おむつ交換の前"},
+        {"icon": "droplet", "title": "体液に触れた後", "text": "唾液・尿・便・血液など"},
+        {"icon": "users", "title": "入所者に触れた後", "text": "体位を変えた後など"},
+        {"icon": "home", "title": "部屋の環境に触れた後", "text": "ベッドの柵・テーブル・リモコン"}
       ]}</script>
     </m-cards>
   </div>
@@ -58,11 +58,11 @@
 <section class="slide" id="s-yftn7l">
   <h2>ポケットの中に注意</h2>
   <div class="body">
-    <m-flow style="height:300px" aria-label="ポケットの鍵や電話に触った手で、そのままケアをしない。触った後は、ケアの前に手指消毒をする">
+    <m-flow style="height:380px" size="36" aria-label="ポケットの鍵や電話に触った手で、そのままケアをしない。触った後は、ケアの前に手指消毒をする">
       <script type="application/json">{"nodes": [
-        {"id": "a", "label": "ポケットの\n鍵・電話", "x": 0, "y": 80, "w": 300, "h": 140, "step": 1, "tone": "emph"},
-        {"id": "b", "label": "手指消毒", "x": 442, "y": 80, "w": 300, "h": 140, "step": 2, "tone": "term"},
-        {"id": "c", "label": "入所者の\nケア", "x": 884, "y": 80, "w": 300, "h": 140, "step": 3}
+        {"id": "a", "label": "ポケットの\n鍵・電話", "x": 0, "y": 60, "w": 330, "h": 220, "step": 1, "tone": "emph"},
+        {"id": "b", "label": "手指消毒", "x": 427, "y": 60, "w": 330, "h": 220, "step": 2, "tone": "term"},
+        {"id": "c", "label": "入所者の\nケア", "x": 854, "y": 60, "w": 330, "h": 220, "step": 3}
       ], "edges": [{"from": "a", "to": "b", "step": 2}, {"from": "b", "to": "c", "step": 3}]}</script>
     </m-flow>
     <p class="note" data-step="3">ポケットは汚れやすい。要らない物は入れない</p>
@@ -73,7 +73,7 @@
 <section class="slide" id="s-kwvwsz">
   <h2>手のふき方と、消毒薬の置き場所</h2>
   <div class="body">
-    <m-cards style="height:330px" layout="grid" aria-label="手のふき方と消毒薬の扱い 4 つ">
+    <m-cards style="height:430px" layout="grid" aria-label="手のふき方と消毒薬の扱い 4 つ">
       <script type="application/json">{"cards": [
         {"icon": "x", "title": "ロール式のタオルは使わない", "text": "前の人がふいた所で次の人がふく"},
         {"icon": "check", "title": "使い捨てのペーパータオル", "text": "壁掛けの、下へ引き出すもの"},
