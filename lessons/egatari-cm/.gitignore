@@ -2,4 +2,4 @@ out/
 .cache/
 video/
 *.ega.html
-audio/*.wav
+*.mp4
