@@ -138,9 +138,7 @@
 <section class="slide noconcl" id="s-e25tve">
   <h2>改善すると、こう変わる</h2>
   <div class="body">
-    <m-curves style="height:310px;zoom:1.4;width:846px" xr="[6,11.5]" yr="[0,6]" xt="[6,7,8,9,10]" yt="[0,2,4,6]" xl="1 日の申請（件）" yl="平均待ち（日）" aria-label="1 日の申請と平均待ちの曲線。処理を 2 割速くすると、9.8 件のときの待ちが 5.0 日から 0.45 日になる（架空）">
-      <script type="application/json">{{JSON:curves.json}}</script>
-    </m-curves>
+    <m-sweep f="1/(c - u)" values="[10,12]" param="1 日に処理できる件数" digits="0" xr="[6,9.9]" yr="[0,6]" xt="[6,7,8,9]" yt="[0,2,4,6]" xl="1 日の申請（件）" yl="平均待ち（日）" at="[1.25]" point='{"u": 9.8, "label": "平均待ち {y} 日", "digits": 2}' size="40" style="height:420px" aria-label="1 日の申請と平均待ちの曲線。処理を 2 割速くすると（1 日 10 件から 12 件）、9.8 件のときの平均待ちが 5.00 日から 0.45 日になる（架空）"></m-sweep>
   </div>
 </section>
 
