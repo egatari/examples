@@ -1,4 +1,4 @@
-"""Fictional numbers for the quarterly report of a fictional company (あさひ食品).
+"""Fictional numbers for the quarterly report of a fictional company (A 食品).
 Run: python3 scripts/make_data.py  -> data/report.json. Every number on the slides comes from here.
 """
 import json
