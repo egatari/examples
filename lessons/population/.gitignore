@@ -1,0 +1,5 @@
+out/
+.cache/
+deck.sheet.png
+deck.steps.png
+*.ega.html
