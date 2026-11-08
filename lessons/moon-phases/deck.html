@@ -7,6 +7,8 @@
 <style>
   .mp-svg text { font-size: 26px; }
   .mp-svg .big { font-size: 30px; }
+  /* 月の光：テーマの accent2 から明るい黄色を作る（16 進は書かない） */
+  .mp-moonlit { fill: oklch(from var(--accent2) 0.88 0.15 calc(h + 25)); }
 </style>
 </head>
 <body>
@@ -89,16 +91,18 @@
   <div class="body">
     <svg class="mp-svg" viewBox="0 0 1180 420" width="1180" height="420" role="img" aria-label="日がしずんだすぐあとの西の空。地平線の近く、太陽がしずんだ側に、右側が光る細い月が見える">
       <rect x="0" y="0" width="1180" height="420" rx="16" style="fill:var(--term);fill-opacity:.12"/>
+      <path d="M0 330 H1180 V404 A16 16 0 0 1 1164 420 H16 A16 16 0 0 1 0 404 Z" style="fill:var(--muted);fill-opacity:.35"/>
       <line x1="0" y1="330" x2="1180" y2="330" style="stroke:var(--fg);stroke-width:3"/>
-      <text x="160" y="380" text-anchor="middle" style="fill:var(--fg)">南</text>
-      <text x="590" y="380" text-anchor="middle" style="fill:var(--fg)">西</text>
-      <text x="1020" y="380" text-anchor="middle" style="fill:var(--fg)">北</text>
+      <text x="1160" y="318" text-anchor="end" style="fill:var(--fg)">地平線</text>
+      <text x="160" y="386" text-anchor="middle" style="fill:var(--fg)">南</text>
+      <text x="590" y="386" text-anchor="middle" style="fill:var(--fg)">西</text>
+      <text x="1020" y="386" text-anchor="middle" style="fill:var(--fg)">北</text>
       <g data-step="1">
-        <circle cx="740" cy="352" r="40" style="fill:var(--accent2);fill-opacity:.6"/>
-        <text x="800" y="318" style="fill:var(--fg)">しずんだ太陽</text>
-        <circle cx="560" cy="200" r="80" style="fill:var(--muted);fill-opacity:.35"/>
-        <path d="M560 120 A80 80 0 0 1 560 280 A56.6 80 0 0 0 560 120 Z" style="fill:var(--emph)"/>
-        <text x="560" y="90" text-anchor="middle" class="big" style="fill:var(--emph)">右側が光る細い月</text>
+        <circle cx="740" cy="378" r="30" style="fill:none;stroke:var(--accent2);stroke-width:3;stroke-dasharray:8 6"/>
+        <text x="786" y="388" style="fill:var(--fg)">しずんだ太陽</text>
+        <circle cx="560" cy="200" r="80" style="fill:var(--muted);fill-opacity:.15"/>
+        <path class="mp-moonlit" d="M560 120 A80 80 0 0 1 560 280 A56.6 80 0 0 0 560 120 Z"/>
+        <text x="560" y="90" text-anchor="middle" class="big" style="fill:var(--fg)">右側が光る細い月</text>
       </g>
       <g data-step="2">
         <text x="40" y="60" style="fill:var(--fg)">光る側は、いつも太陽の方を向く</text>
