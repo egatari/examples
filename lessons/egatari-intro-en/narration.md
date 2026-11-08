@@ -1,7 +1,7 @@
 # Narration: Introducing Egatari
 
-## Pictures narrate. People pass it on. {#s-gyslzb}
-[0] Pictures narrate. People pass it on. Egatari, which means picture-telling, is one file for everyone with something to tell.
+## Visuals narrate. You pass it on. {#s-gyslzb}
+[0] Visuals narrate. You pass it on. Egatari, which means picture-telling, is one file for everyone with something to tell.
 
 ## Figures build in the order you speak {#s-fu7qxa}
 [0] Take a quarterly report from a fictional company.
