@@ -7,8 +7,9 @@
 <style>
   .mp-svg text { font-size: 26px; }
   .mp-svg .big { font-size: 30px; }
-  /* 月の光：テーマの accent2 から明るい黄色を作る（16 進は書かない） */
-  .mp-moonlit { fill: oklch(from var(--accent2) 0.88 0.15 calc(h + 25)); }
+  /* 光と影は m-orbit と同じ色（光＝accent2 を地に 22 %、影＝字の色を地に 42 %）。赤（emph）は「見える所」の印で、光の色ではない */
+  .mp-lit { fill: color-mix(in srgb, var(--accent2) 22%, var(--bg)); }
+  .mp-dark { fill: color-mix(in srgb, var(--fg) 42%, var(--bg)); }
 </style>
 </head>
 <body>
@@ -37,7 +38,7 @@
       <!-- step 0: earth, moon (dark), not-to-scale note -->
       <circle cx="190" cy="330" r="36" style="fill:var(--term);fill-opacity:.25;stroke:var(--term);stroke-width:3"/>
       <text x="190" y="404" text-anchor="middle" style="fill:var(--fg)">地球</text>
-      <path d="M374 56 A90 90 0 0 0 374 236 Z" style="fill:var(--muted);fill-opacity:.55"/>
+      <circle class="mp-dark" cx="374" cy="146" r="90"/>
       <circle cx="374" cy="146" r="90" style="fill:none;stroke:var(--fg);stroke-width:3"/>
       <text x="374" y="30" text-anchor="middle" style="fill:var(--fg)">月</text>
       <!-- step 1: sunlight and the lit half -->
@@ -47,7 +48,7 @@
         <line x1="660" y1="196" x2="490" y2="196" style="stroke:var(--accent2);stroke-width:4"/>
         <path d="M490 84 L472 96 L490 108 Z M490 134 L472 146 L490 158 Z M490 184 L472 196 L490 208 Z" style="fill:var(--accent2)"/>
         <text x="672" y="155" style="fill:var(--fg)">太陽の光</text>
-        <path d="M374 56 A90 90 0 0 1 374 236 Z" style="fill:var(--accent2);fill-opacity:.18;stroke:var(--accent2);stroke-width:3"/>
+        <path class="mp-lit" d="M374 56 A90 90 0 0 1 374 236 Z"/>
         <text x="500" y="44" style="fill:var(--fg)">光っている半分</text>
       </g>
       <!-- step 2: the half that faces the earth -->
@@ -60,15 +61,15 @@
       </g>
       <!-- step 3: the overlap -->
       <g data-step="3">
-        <path d="M374 146 L437.6 209.6 A90 90 0 0 1 374 236 Z" style="fill:var(--emph);fill-opacity:.8;stroke:var(--emph);stroke-width:3"/>
+        <path d="M374 146 L437.6 209.6 A90 90 0 0 1 374 236 Z" style="fill:none;stroke:var(--emph);stroke-width:6;stroke-linejoin:round"/>
         <text x="440" y="300" style="fill:var(--emph)">重なり＝光って見える所</text>
       </g>
       <!-- step 4: as seen from the earth -->
       <g data-step="4">
         <line x1="760" y1="20" x2="760" y2="400" style="stroke:var(--line);stroke-width:2"/>
         <text x="980" y="44" text-anchor="middle" style="fill:var(--fg)">地球から見ると</text>
-        <circle cx="980" cy="190" r="110" style="fill:var(--muted);fill-opacity:.55;stroke:var(--muted);stroke-width:2"/>
-        <path d="M980 80 A110 110 0 0 1 980 300 A77.8 110 0 0 0 980 80 Z" style="fill:var(--emph);fill-opacity:.8"/>
+        <circle class="mp-dark" cx="980" cy="190" r="110"/>
+        <path class="mp-lit" d="M980 80 A110 110 0 0 1 980 300 A77.8 110 0 0 0 980 80 Z" style="stroke:var(--emph);stroke-width:6;stroke-linejoin:round"/>
         <text x="980" y="350" text-anchor="middle" class="big" style="fill:var(--emph)">右側が光る三日月</text>
       </g>
     </svg>
@@ -100,8 +101,8 @@
       <g data-step="1">
         <circle cx="740" cy="378" r="30" style="fill:none;stroke:var(--accent2);stroke-width:3;stroke-dasharray:8 6"/>
         <text x="786" y="388" style="fill:var(--fg)">しずんだ太陽</text>
-        <circle cx="560" cy="200" r="80" style="fill:var(--muted);fill-opacity:.15"/>
-        <path class="mp-moonlit" d="M560 120 A80 80 0 0 1 560 280 A56.6 80 0 0 0 560 120 Z"/>
+        <circle class="mp-dark" cx="560" cy="200" r="80"/>
+        <path class="mp-lit" d="M560 120 A80 80 0 0 1 560 280 A56.6 80 0 0 0 560 120 Z"/>
         <text x="560" y="90" text-anchor="middle" class="big" style="fill:var(--fg)">右側が光る細い月</text>
       </g>
       <g data-step="2">
