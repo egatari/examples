@@ -1,0 +1,3 @@
+# Local files the editor and the CLI write next to a lesson; not lesson content
+.cache/
+out/
