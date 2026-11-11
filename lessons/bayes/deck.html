@@ -21,15 +21,11 @@
 <section class="slide" id="s-flkppm">
   <h2>A mail says "free". Is it spam?</h2>
   <div class="body">
-    <p class="sub">A new mail contains the word "free". How likely is it spam?</p>
-    <m-bars style="height:300px" orient="h" per-step="0" unit=" votes" ticks="false" aria-label="Guesses from a class (fictional): 16 votes for about 90 percent, 5 for about 50 percent, 3 for about 10 percent">
-      <script type="application/json">{"series": [{"label": "Guesses (fictional)"}], "groups": [
-        {"label": "About 90%", "value": 16},
-        {"label": "About 50%", "value": 5},
-        {"label": "About 10%", "value": 3}
-      ]}</script>
-    </m-bars>
-    <p data-step="2">Answer: <span class="emph">about 50%</span>, a coin toss</p>
+    <m-predict style="height:380px" unit=" votes" aria-label="Guess first: a new mail contains the word free; how likely is it spam? Sample class votes (fictional): 16 for about 90 percent, 5 for about 50 percent, 3 for about 10 percent. The answer is about 50 percent">
+      <script type="application/json">{"question": "A new mail contains \"free\". How likely is it spam?",
+        "choices": [{"label": "About 90%"}, {"label": "About 50%"}, {"label": "About 10%"}],
+        "answer": 1, "counts": [16, 5, 3], "note": "About 50%: a coin toss"}</script>
+    </m-predict>
   </div>
   <div class="concl"><span>To answer, we need two things: how common spam is, and the word</span></div>
 </section>
