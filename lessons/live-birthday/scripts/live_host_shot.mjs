@@ -1,9 +1,22 @@
 // Fictional Live on a LOCAL server only (127.0.0.1:8799), for gallery screenshots of the host page.
+// Usage: EGATARI_STUDIO=<path to an egatari-studio checkout> node live_host_shot.mjs <out-dir>
+// playwright-core is loaded from that checkout's node_modules.
 import { createRequire } from 'module';
+import { existsSync } from 'fs';
+import { join, resolve } from 'path';
 import crypto from 'crypto';
-const require = createRequire('/Users/gendo/Projects/egatari/studio/package.json');
-const { chromium } = require('playwright-core');
+const STUDIO = process.env.EGATARI_STUDIO;
+if (!STUDIO || !existsSync(join(STUDIO, 'package.json'))) {
+  console.error('Set EGATARI_STUDIO to an egatari-studio checkout (the folder with its package.json and node_modules/playwright-core).');
+  process.exit(2);
+}
 const OUT = process.argv[2];
+if (!OUT) {
+  console.error('Usage: EGATARI_STUDIO=<studio> node live_host_shot.mjs <out-dir>');
+  process.exit(2);
+}
+const require = createRequire(join(resolve(STUDIO), 'package.json'));
+const { chromium } = require('playwright-core');
 const EP = 'http://127.0.0.1:8799';
 const b64u = (b) => Buffer.from(b).toString('base64url');
 const b32 = (b) => { const a = 'abcdefghijklmnopqrstuvwxyz234567'; let bits = 0, v = 0, o = '';
