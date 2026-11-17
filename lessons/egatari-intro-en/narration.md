@@ -13,7 +13,7 @@
 [0] An Egatari file opens as slides and as a book.
 [1] The slides are for showing while you talk.
 [2] The book is for reading the same story in more detail.
-[3] Press r, and the book of this introduction opens.
+[3] Press r to read these slides as a book.
 [concl] The slides you show and the book you read are in the same file.
 
 ## The AI need not get it right the first time {#s-csvids}
@@ -35,7 +35,7 @@
 [6] And whoever receives it can open it and edit it.
 [concl] Hand over one HTML file, and it plays.
 
-## This introduction was made with Egatari {#s-wz3jqf}
-[0] This introduction was made with Egatari, too. An AI wrote it from a short brief, and it passed the quality check.
+## These slides were made with Egatari {#s-wz3jqf}
+[0] These slides were made with Egatari, too. An AI wrote it from a short brief, and it passed the quality check.
 [1] The samples are at egatari dot org, Studio runs in your browser, and the format is open for anyone to use.
 [concl] Put what you have to tell into one file.
