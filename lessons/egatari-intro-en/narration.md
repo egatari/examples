@@ -10,11 +10,11 @@
 [concl] Each click brings in the next part, in the order you speak.
 
 ## Slides and a book, in one file {#s-xscp5m}
-[0] An Egatari file has two faces.
+[0] An Egatari file opens as slides and as a book.
 [1] The slides are for showing while you talk.
-[2] The book tells the same story in full text, for reading.
+[2] The book is for reading the same story in more detail.
 [3] Press r, and the book of this introduction opens.
-[concl] What you show and what people read live in the same file.
+[concl] The slides you show and the book you read are in the same file.
 
 ## The AI need not get it right the first time {#s-csvids}
 [0] A chat AI can write the slides for you. But the instructions it follows are long and detailed, so it may not get everything right at once.
