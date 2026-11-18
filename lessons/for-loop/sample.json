@@ -5,7 +5,6 @@
   "subcategory": "class",
   "theme": "default",
   "parts": [
-    "m-trace",
     "m-cards"
   ],
   "structure": [
