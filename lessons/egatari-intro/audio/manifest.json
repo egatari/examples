@@ -201,13 +201,13 @@
    }
   },
   "s-6a7bsf:0": {
-   "file": "seg_83ff472bf633.m4a",
-   "dur": 9.301,
+   "file": "seg_4149018c64cb.m4a",
+   "dur": 13.506,
    "cues": [],
-   "digest": "83ff472bf633",
+   "digest": "4149018c64cb",
    "engine": "irodori",
    "kind": "tts",
-   "inputHash": "7af96be8041884ec6b70c18b97888b32e04c22af2ce485dfbc11fa483d22ba07",
+   "inputHash": "01fdf041cf68241bb4a136309c67732edc1afada48f153743084e08ed54962f4",
    "recipe": {
     "engine": "irodori",
     "model": "mlx-community/Irodori-TTS-v4.1-Small-fp16",
