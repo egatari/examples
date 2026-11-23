@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="default">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>売上の止まり方から、欠品を先に知る</title>
+<!--
+  研究発表の見本。研究・店・研究者・数字はすべて架空。
+  しおり（data-bookmark）：位置づけの表と付録。質疑で見せ直す材料は付録に置く。しおりで飛ぶと最後の状態が出て、元の位置に戻れる。
+-->
+</head>
+<body>
+<div id="stage">
+
+<section class="slide cover noconcl static" id="s-wettul">
+  <div class="venue">架空の研究会の発表（研究も数字も架空）</div>
+  <h1>売上の止まり方から、欠品を先に知る</h1>
+  <div class="au">A 大学　経営工学研究室</div>
+</section>
+
+<section class="slide" id="s-qurgq3">
+  <h2>欠品は、棚を見て初めて分かる</h2>
+  <div class="body">
+    <p>架空の食品スーパー 20 店で、欠品の見つけ方を調べた。</p>
+    <m-kpi style="height:260px" aria-label="店員が棚を見て回るのは 1 日 3 回。欠品から見つけるまで平均 2.6 時間（架空）">
+      <script type="application/json">{"cards": [
+        {"label": "棚を見て回る", "value": 3, "unit": " 回／日"},
+        {"label": "欠品から見つけるまで", "value": 2.6, "digits": 1, "unit": " 時間", "tone": "emph", "note": "その間は売り逃し"}
+      ]}</script>
+    </m-kpi>
+    <p class="emph" data-step="3">棚を見る前に、欠品を知ることはできないか</p>
+  </div>
+  <div class="concl"><span>問い：棚を見る前に、欠品を知れるか</span></div>
+</section>
+
+<section class="slide" data-bookmark="位置づけ" id="s-wcnyoa">
+  <h2>この研究の位置づけ</h2>
+  <div class="body">
+    <m-matrix style="height:420px" aria-label="研究の位置づけの表。行は使うデータ（棚の画像、POS の売上）、列は知る時点（欠品の後、欠品の前）。棚の画像で欠品の後に知る研究が [1] と [2]、棚の画像で欠品の前に知る研究が [3]、POS の売上で欠品の後に知る研究が [4]。POS の売上で欠品の前に知るのが本研究">
+      <script type="application/json">{"kind": "cross",
+        "rows": {"axis": "使うデータ", "values": ["棚の画像", "POS の売上"]},
+        "cols": {"axis": "知る時点", "values": ["欠品の後", "欠品の前"]},
+        "cells": [
+          [["[1]", "[2]"], ["[3]"]],
+          [["[4]"], {"self": "売れる間隔の伸びで、欠品の前に知らせる"}]
+        ]}</script>
+    </m-matrix>
+  </div>
+  <div class="concl"><span>カメラなしで、欠品の前に知らせる</span></div>
+</section>
+
+<section class="slide" id="s-mrmlsg">
+  <h2>方法：売れる間隔の伸びを見る</h2>
+  <div class="body">
+    <m-flow size="30" style="height:330px" aria-label="3 つの段階：POS の売上を 1 分ごとに集める、品ごとに売れる間隔を測る、いつもの間隔の 3 倍を超えたら知らせる">
+      <script type="application/json">{"nodes": [
+        {"id": "a", "label": "POS の売上を\n1 分ごとに集める", "x": 10, "y": 60, "w": 340, "h": 160, "step": 1},
+        {"id": "b", "label": "品ごとに\n売れる間隔を測る", "x": 422, "y": 60, "w": 340, "h": 160, "step": 2, "tone": "term"},
+        {"id": "c", "label": "いつもの 3 倍を\n超えたら知らせる", "x": 834, "y": 60, "w": 340, "h": 160, "step": 3, "tone": "emph"}
+      ], "edges": [
+        {"from": "a", "to": "b"}, {"from": "b", "to": "c"}
+      ]}</script>
+    </m-flow>
+    <p class="note" data-step="3">例：いつも 10 分おきに売れる品が、30 分売れなければ知らせる</p>
+  </div>
+  <div class="concl"><span>棚が空くと、その品だけ売れなくなる</span></div>
+</section>
+
+<section class="slide" id="s-hkigeb">
+  <h2>結果：売り逃しが 3 分の 1 に</h2>
+  <div class="body">
+    <m-bars orient="h" unit=" 個" digits="1" style="height:300px" aria-label="1 店 1 日あたりの売り逃しの数（架空）。棚の巡回だけでは 14.2 個、知らせを足すと 4.9 個">
+      <script type="application/json">{"groups": [
+        {"label": "棚の巡回だけ", "value": 14.2, "tone": "muted"},
+        {"label": "知らせを足す", "value": 4.9, "tone": "emph"}
+      ]}</script>
+    </m-bars>
+    <p class="note" data-step="3">架空の 20 店・4 週。知らせは欠品の平均 1.8 時間前</p>
+  </div>
+  <div class="concl"><span>売り逃しは 1 日 14.2 個から 4.9 個に減った</span></div>
+</section>
+
+<section class="slide" id="s-qjg7jz">
+  <h2>近い研究の答えと比べる</h2>
+  <div class="body">
+    <m-contrast style="height:440px" aria-label="問いごとに、近い研究の答えと本研究の答えを並べる。POS の売上だけで欠品が分かるか：近い研究 [4] は欠品の後なら分かる、本研究は欠品の前に分かる。どれだけ前に知れるか：POS では不明、棚の画像なら欠品の前に分かる [3]。本研究は平均 1.8 時間前（架空の 20 店・4 週）">
+      <script type="application/json">{"kind": "answers", "heads": ["問い", "近い研究", "本研究"], "rows": [
+        {"q": "POS の売上だけで\n欠品が分かるか", "before": {"text": "欠品の後なら分かる", "by": "[4]"}, "after": "欠品の前に分かる", "basis": "売れる間隔の伸び"},
+        {"q": "どれだけ前に\n知れるか", "before": {"unknown": true, "near": "棚の画像なら前に分かる [3]"}, "after": "平均 1.8 時間前", "basis": "架空の 20 店・4 週"}
+      ]}</script>
+    </m-contrast>
+  </div>
+  <div class="concl"><span>カメラなしで、欠品の前に知れた</span></div>
+</section>
+
+<section class="slide" id="s-ryjda3">
+  <h2>限界：客の少ない日と見分けにくい</h2>
+  <div class="body">
+    <ul>
+      <li data-step="1">雨の日など客が少ない日も、売れる間隔は伸びる</li>
+      <li data-step="2">知らせの 3 回に 1 回は、欠品ではなかった</li>
+      <li class="term" data-step="3">次は、天気と曜日でいつもの間隔を変える</li>
+    </ul>
+    <m-bars data-from="2" orient="h" stack="true" unit=" 回" ticks="false" style="height:170px" aria-label="知らせ 300 回の内訳（架空）。欠品だった 200 回、欠品でなかった 100 回">
+      <script type="application/json">{"series": [{"label": "欠品だった", "tone": "term"}, {"label": "欠品でなかった", "tone": "emph"}],
+        "groups": [{"label": "知らせ", "values": [200, 100]}]}</script>
+    </m-bars>
+  </div>
+  <div class="concl"><span>空振りを減らすのが、次の課題</span></div>
+</section>
+
+<section class="slide" id="s-a5qncr">
+  <h2>まとめ：棚を見る前に欠品を知る</h2>
+  <div class="body">
+    <m-cards style="height:360px" aria-label="まとめの 3 枚：POS の売上だけで欠品の前に知らせた、売り逃しは 3 分の 1 に、空振りを減らすのが次の課題">
+      <script type="application/json">{"cards": [
+        {"n": "1", "title": "売上だけで", "text": "POS の売上で、欠品の前に知らせた"},
+        {"n": "2", "title": "売り逃し 1/3", "text": "1 日 14.2 個から 4.9 個に", "tone": "emph"},
+        {"n": "3", "title": "次の課題", "text": "空振りの 3 回に 1 回を減らす"}
+      ]}</script>
+    </m-cards>
+  </div>
+  <div class="concl"><span>カメラを置かずに、売り逃しを減らせる</span></div>
+</section>
+
+<section class="slide cover noconcl static" id="s-a6bcis">
+  <div class="venue">位置づけの表と付録には、しおりからすぐ飛べる</div>
+  <h1>ご質問をお受けします</h1>
+  <div class="au">研究・店・研究者・数字は、すべて架空</div>
+</section>
+
+<section class="slide" data-bookmark="付録" id="s-qr7hws">
+  <h2>付録：知らせの基準を変えると</h2>
+  <div class="body">
+    <p>いつもの間隔の何倍で知らせるか（架空の 20 店・4 週）</p>
+    <table>
+      <thead><tr><th>基準</th><th>知らせ</th><th>うち欠品</th><th>欠品の何時間前</th></tr></thead>
+      <tbody>
+        <tr data-step="1"><td>2 倍</td><td>520 回</td><td>230 回</td><td>2.4 時間</td></tr>
+        <tr data-step="2" class="b"><td>3 倍（本研究）</td><td>300 回</td><td>200 回</td><td>1.8 時間</td></tr>
+        <tr data-step="3"><td>4 倍</td><td>190 回</td><td>150 回</td><td>1.1 時間</td></tr>
+      </tbody>
+    </table>
+    <m-bars orient="h" stack="true" unit=" 回" ticks="false" style="height:180px" aria-label="知らせの内訳（架空）。2 倍：欠品 230 回・空振り 290 回、3 倍：欠品 200 回・空振り 100 回、4 倍：欠品 150 回・空振り 40 回">
+      <script type="application/json">{"series": [{"label": "欠品だった", "tone": "term"}, {"label": "空振り", "tone": "emph"}],
+        "groups": [{"label": "2 倍", "values": [230, 290]}, {"label": "3 倍", "values": [200, 100]}, {"label": "4 倍", "values": [150, 40]}]}</script>
+    </m-bars>
+  </div>
+  <div class="concl"><span>3 倍は、空振りと早さの釣り合いで選んだ</span></div>
+</section>
+
+</div>
+</body>
+</html>
