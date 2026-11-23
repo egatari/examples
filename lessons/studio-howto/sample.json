@@ -1,0 +1,120 @@
+{
+  "v": 1,
+  "request": "ブラウザの Egatari Studio の使い方を、初めての先生向けに本とスライドで説明してください。対話型 AI で下書きを作る、品質チェックとコメントで直す、声を付ける、本のある教材を読む、配る（再生専用・権利の表示・SCORM・動画・発表としおり）の 5 章と、端末を使う人向けの付録。画面の画像は Studio の試験の撮影から取り、版と撮った試験を記録してください。",
+  "category": "teaching",
+  "subcategory": "training",
+  "purposes": [
+    "process"
+  ],
+  "subjects": [
+    "informatics"
+  ],
+  "audiences": [
+    "working-adult"
+  ],
+  "theme": "default",
+  "parts": [
+    "m-cards",
+    "m-flow"
+  ],
+  "structure": [
+    {
+      "heading": "Studio で始める絵語り",
+      "point": "表紙（Egatari Studio v0.6.19 の手引き）"
+    },
+    {
+      "heading": "ステップごとに、1 つずつ見せる",
+      "point": "ステップごとに、1 つずつ見せる"
+    },
+    {
+      "heading": "この本の流れ",
+      "point": "この本の流れ"
+    },
+    {
+      "heading": "1 対話型 AI で作る",
+      "point": "章の扉"
+    },
+    {
+      "heading": "Studio と対話型 AI を行き来する",
+      "point": "Studio と対話型 AI を行き来する"
+    },
+    {
+      "heading": "新規作成の 5 つの問い",
+      "point": "新規作成の 5 つの問い"
+    },
+    {
+      "heading": "長いものは、構成案から 6 枚ずつ",
+      "point": "長いものは、構成案から 6 枚ずつ"
+    },
+    {
+      "heading": "うまく貼れないときは",
+      "point": "うまく貼れないときは"
+    },
+    {
+      "heading": "2 直す",
+      "point": "章の扉"
+    },
+    {
+      "heading": "品質チェックが見ること",
+      "point": "品質チェックが見ること"
+    },
+    {
+      "heading": "直し方は 3 つ",
+      "point": "直し方は 3 つ"
+    },
+    {
+      "heading": "スライド一覧でできること",
+      "point": "スライド一覧でできること"
+    },
+    {
+      "heading": "3 声を付ける",
+      "point": "章の扉"
+    },
+    {
+      "heading": "声の付け方は 3 つ",
+      "point": "声の付け方は 3 つ"
+    },
+    {
+      "heading": "読み方を付ける",
+      "point": "読み方を付ける"
+    },
+    {
+      "heading": "台本を直したら、音声を更新する",
+      "point": "台本を直したら、音声を更新する"
+    },
+    {
+      "heading": "4 本のある教材を読む",
+      "point": "章の扉"
+    },
+    {
+      "heading": "スライドと本を行き来する",
+      "point": "スライドと本を行き来する"
+    },
+    {
+      "heading": "3 つの並べ方",
+      "point": "章の扉"
+    },
+    {
+      "heading": "5 配る",
+      "point": "章の扉"
+    },
+    {
+      "heading": "何を作って渡すか",
+      "point": "何を作って渡すか"
+    },
+    {
+      "heading": "受け取る人に伝えること",
+      "point": "受け取る人に伝えること"
+    },
+    {
+      "heading": "発表で、しおりに飛ぶ",
+      "point": "発表で、しおりに飛ぶ"
+    }
+  ],
+  "book": true,
+  "lang": "ja",
+  "rights": {
+    "license": "CC-BY-4.0",
+    "attribution": "Gendo Kumoi (egatari/examples)。画面の画像は Egatari Studio（egatari/egatari-studio）の試験の撮影から取った"
+  }
+}
