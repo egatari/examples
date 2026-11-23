@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="default">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio で始める絵語り</title>
+<!--
+  ガイドブックの要所のスライド。本が主で、スライドは章ごとに 3〜4 枚。
+  画面の画像は本の図に入れ、スライドには入れない。
+-->
+<style>
+.ex { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 12px; }
+.ex > div { border: 2px solid var(--line); border-radius: 12px; padding: 16px 24px; }
+.ex .big { margin: 8px 0; }
+</style>
+</head>
+<body>
+<div id="stage">
+
+<section class="slide cover noconcl static" id="s-52ix7t">
+  <div class="venue">Egatari Studio v0.6.19 の手引き</div>
+  <h1>Studio で始める絵語り</h1>
+  <div class="au">対話型 AI で作り、直し、声を付けて配る</div>
+</section>
+
+<section class="slide" id="s-ghz3ej" data-article="sec-wj36dy">
+  <h2>ステップごとに、1 つずつ見せる</h2>
+  <div class="body">
+    <p>説明の前に答えが見えていると、聞き手の目は先へ進んでしまう。</p>
+    <m-cards style="height:330px" aria-label="Egatari の 3 つの特徴。ステップごとに 1 つずつ出す、音声付きで再生する、できあがりは 1 つのファイル" hilite="3">
+      <script type="application/json">{"cards": [
+        {"icon": "list-numbers", "title": "ステップごとに出す", "text": "スライドの中身を、1 つずつ"},
+        {"icon": "microphone", "title": "音声付きで再生", "text": "図を動かし、ステップごとに声を付ける"},
+        {"icon": "file", "title": "1 つのファイル", "text": ".ega.html をブラウザで開けば再生できる"}
+      ]}</script>
+    </m-cards>
+  </div>
+  <div class="concl"><span>Egatari は、音声付きで再生できる教材のファイル</span></div>
+</section>
+
+<section class="slide" id="s-4l5yya" data-article="sec-3hrzeo sec-ukipid">
+  <h2>この本の流れ</h2>
+  <div class="body">
+    <m-flow size="30" style="height:380px" aria-label="この本の流れ。作る、直す、声を付ける、本を読む、配るの 5 つの章">
+      <script type="application/json">{"nodes": [
+        {"id": "a", "label": "1 作る", "x": 0, "y": 110, "w": 200, "h": 150, "step": 1},
+        {"id": "b", "label": "2 直す", "x": 245, "y": 110, "w": 200, "h": 150, "step": 2},
+        {"id": "c", "label": "3 声を\n付ける", "x": 490, "y": 110, "w": 200, "h": 150, "step": 3},
+        {"id": "d", "label": "4 本を\n読む", "x": 735, "y": 110, "w": 200, "h": 150, "step": 4, "tone": "muted"},
+        {"id": "e", "label": "5 配る", "x": 980, "y": 110, "w": 200, "h": 150, "step": 5, "tone": "emph"}
+      ], "edges": [
+        {"from": "a", "to": "b"}, {"from": "b", "to": "c"}, {"from": "c", "to": "d"}, {"from": "d", "to": "e"}
+      ]}</script>
+    </m-flow>
+  </div>
+  <div class="concl"><span>インストールは要らず、ブラウザだけで進む</span></div>
+</section>
+
+<section class="slide sec noconcl static" id="s-g3fk3w"><h1>1　対話型 AI で作る</h1></section>
+
+<section class="slide" id="s-cez5ix" data-article="sec-uhsvfw sec-wimnxl">
+  <h2>Studio と対話型 AI を行き来する</h2>
+  <div class="body">
+    <m-flow size="30" style="height:380px" aria-label="Studio で指示をコピーし、対話型 AI に貼って送信する。AI の出力をコピーして、Studio に貼るとスライドができる">
+      <script type="application/json">{"nodes": [
+        {"id": "s1", "label": "Studio\n問いに答える", "x": 0, "y": 20, "w": 300, "h": 110, "step": 1},
+        {"id": "ai", "label": "対話型 AI\nスライドと台本を書く", "x": 760, "y": 20, "w": 420, "h": 110, "step": 2, "tone": "muted"},
+        {"id": "s2", "label": "Studio\nスライドができる", "x": 0, "y": 250, "w": 300, "h": 110, "step": 3, "tone": "emph"}
+      ], "edges": [
+        {"from": "s1", "to": "ai", "label": "指示をコピーして貼る", "step": 2},
+        {"from": "ai", "to": "s2", "label": "出力をコピーして貼る", "step": 3}
+      ]}</script>
+    </m-flow>
+  </div>
+  <div class="concl"><span>AI とのやりとりは、ふだんのチャットの画面で</span></div>
+</section>
+
+<section class="slide" id="s-wobzcg" data-article="sec-jgagrk">
+  <h2>新規作成の 5 つの問い</h2>
+  <div class="body">
+    <m-cards style="height:440px" layout="grid" arrows nums hilite="last" aria-label="新規作成の 5 つの問い。1 場面、2 何をだれに、3 見た目、4 指示をコピー、5 出力を貼って作成">
+      <script type="application/json">{"cards": [
+        {"title": "場面", "text": "授業・研究発表・ビジネス …"},
+        {"title": "何をだれに", "text": "タイトルだけは必ず書く"},
+        {"title": "見た目", "text": "テーマを選ぶ"},
+        {"title": "指示をコピー", "text": "対話型 AI に貼って送信"},
+        {"title": "出力を貼る", "text": "2 つの枠を貼って「作成」"}
+      ]}</script>
+    </m-cards>
+  </div>
+  <div class="concl"><span>迷う所は「AI に任せる」のままでよい</span></div>
+</section>
+
+<section class="slide" id="s-koafs7" data-article="sec-5ctsxt">
+  <h2>長いものは、構成案から 6 枚ずつ</h2>
+  <div class="body">
+    <m-flow size="30" style="height:380px" aria-label="9 枚以上なら、まず構成案を頼み、それから 6 枚ずつスライドを頼む">
+      <script type="application/json">{"nodes": [
+        {"id": "o", "label": "構成案\n見出しと要点の表", "x": 0, "y": 110, "w": 330, "h": 150, "step": 1, "tone": "term"},
+        {"id": "a", "label": "1〜6 枚目", "x": 380, "y": 110, "w": 220, "h": 150, "step": 2},
+        {"id": "b", "label": "7〜12 枚目", "x": 780, "y": 110, "w": 220, "h": 150, "step": 3},
+        {"id": "c", "label": "…", "x": 1060, "y": 110, "w": 120, "h": 150, "step": 3, "tone": "muted"}
+      ], "edges": [
+        {"from": "o", "to": "a"}, {"from": "a", "to": "b", "label": "次の 6 枚"}, {"from": "b", "to": "c"}
+      ]}</script>
+    </m-flow>
+  </div>
+  <div class="concl"><span>9 枚以上なら、Studio が 2 回に分けて頼む</span></div>
+</section>
+
+<section class="slide" id="s-ruakjr" data-article="sec-buc3rn">
+  <h2>うまく貼れないときは</h2>
+  <div class="body">
+    <m-cards style="height:360px" aria-label="うまく貼れないときの 3 つ。出力が途中で切れたら続きを依頼する指示をコピー、どちらの枠か分からないときは 1 つずつ貼る、作成が押せないときはボタンの左の 1 つに答える">
+      <script type="application/json">{"cards": [
+        {"icon": "scissors", "title": "途中で切れた", "text": "「続きを依頼する指示をコピー」で AI に渡す"},
+        {"icon": "files", "title": "どちらの枠か分からない", "text": "1 つずつ、それぞれの欄に貼る"},
+        {"icon": "hand-click", "title": "作成が押せない", "text": "ボタンの左に出る 1 つに答える"}
+      ]}</script>
+    </m-cards>
+  </div>
+  <div class="concl"><span>出力の全体を、どちらの欄に貼ってもよい</span></div>
+</section>
+
+<section class="slide sec noconcl static" id="s-a762z7"><h1>2　直す</h1></section>
+
+<section class="slide" id="s-pdccss" data-article="sec-teeeok">
+  <h2>品質チェックが見ること</h2>
+  <div class="body">
+    <m-cards style="height:390px" layout="grid" aria-label="品質チェックが見る 4 つ。字のはみ出し、タイトルと結論の長さ、台本の抜け、式の読み上げ">
+      <script type="application/json">{"cards": [
+        {"icon": "ruler", "title": "はみ出し", "text": "字が箱やスライドから出ていないか"},
+        {"icon": "text-size", "title": "長さ", "text": "タイトルと結論の行が長すぎないか"},
+        {"icon": "message", "title": "台本の抜け", "text": "どのステップにも台本があるか"},
+        {"icon": "math-function", "title": "式の読み上げ", "text": "台本が式をそのまま読んでいないか"}
+      ]}</script>
+    </m-cards>
+    <p class="note" data-step="5">エラーは直してから配る。警告は、読んで納得できればよい</p>
+  </div>
+  <div class="concl"><span>ビルドのたびに、Studio が自分でかける</span></div>
+</section>
+
+<section class="slide" id="s-xlpe4n" data-article="sec-j5pqpu sec-dmzabm sec-dvapv4">
+  <h2>直し方は 3 つ</h2>
+  <div class="body">
+    <m-cards style="height:330px" aria-label="直し方は 3 つ。自分で直す、AI に修正依頼を渡す、コメントを残してあとで直す">
+      <script type="application/json">{"cards": [
+        {"icon": "pencil", "title": "自分で直す", "text": "e で編集モード。ダブルクリックで原稿が開く"},
+        {"icon": "robot", "title": "AI に頼む", "text": "修正… で、指摘とコメントをまとめて渡す"},
+        {"icon": "message", "title": "コメントを残す", "text": "Alt+クリックで、気づいた所に印を付ける"}
+      ]}</script>
+    </m-cards>
+  </div>
+  <div class="concl"><span>指摘が多いときは、AI にまとめて頼む</span></div>
+</section>
+
+<section class="slide" id="s-7j7zph" data-article="sec-tze2ae sec-gpsykn sec-kvoipu">
+  <h2>スライド一覧でできること</h2>
+  <div class="body">
+    <m-cards style="height:440px" layout="grid" hilite="4" aria-label="スライド一覧でできる 4 つ。挿入、複製と削除、並べ替え、元に戻す">
+      <script type="application/json">{"cards": [
+        {"icon": "plus", "title": "挿入", "text": "テンプレートからか、対話型 AI で作成"},
+        {"icon": "copy", "title": "複製・削除", "text": "台本と音声も一緒に"},
+        {"icon": "arrows-sort", "title": "並べ替え", "text": "ドラッグか ↑ ↓。台本も同じ順に"},
+        {"icon": "arrow-back-up", "title": "元に戻す", "text": "直前の操作を取り消す"}
+      ]}</script>
+    </m-cards>
+  </div>
+  <div class="concl"><span>大きく変える前に、ファイルを保存しておく</span></div>
+</section>
+
+<section class="slide sec noconcl static" id="s-owdyvz"><h1>3　声を付ける</h1></section>
+
+<section class="slide" id="s-qyneg6" data-article="sec-ilci3f sec-3w6zx3">
+  <h2>声の付け方は 3 つ</h2>
+  <div class="body">
+    <m-cards style="height:340px" aria-label="声の付け方は 3 つ。自分の声で録音する、AI 音声をクラウドの Google Colab で作る、AI 音声を自分の PC で作る（高性能なパソコンが要る）">
+      <script type="application/json">{"cards": [
+        {"icon": "microphone", "title": "録音する", "text": "台本を見ながら Space で録る"},
+        {"icon": "cloud", "title": "クラウドで作る", "text": "学校の PC でも。Google Colab で作って取り込む"},
+        {"icon": "device-laptop", "title": "自分の PC で作る", "text": "Chrome か Edge の中で AI が読む。高性能なパソコンが要る"}
+      ]}</script>
+    </m-cards>
+  </div>
+  <div class="concl"><span>どれも、音声のパネルから始める</span></div>
+</section>
+
+<section class="slide" id="s-z2hven" data-article="sec-twy5u5">
+  <h2>読み方を付ける</h2>
+  <div class="body">
+    <p>AI 音声は、名前・日付・専門の用語の読みをときどき間違える。</p>
+    <div class="ex">
+      <div data-step="1"><p class="sub">読みなし</p><p>4 月一日に、…</p><p class="muted">→「いちにち」と読まれることがある</p></div>
+      <div data-step="2"><p class="sub">読みあり</p><p>4 月<span class="term"><ruby>一日<rt>ついたち</rt></ruby></span>に、…</p><p class="muted">→「ついたち」と読む</p></div>
+    </div>
+  </div>
+  <div class="concl"><span>語を選んで「読み方…」を押す</span></div>
+</section>
+
+<section class="slide" id="s-2wntwa" data-article="sec-n25flm">
+  <h2>台本を直したら、音声を更新する</h2>
+  <div class="body">
+    <m-flow size="30" style="height:380px" aria-label="音声を作った後で台本を直すと、そのステップは更新が必要になる。音声を更新で作り直す">
+      <script type="application/json">{"nodes": [
+        {"id": "a", "label": "音声を作る", "x": 0, "y": 110, "w": 280, "h": 150, "step": 1},
+        {"id": "b", "label": "台本を直す", "x": 450, "y": 110, "w": 280, "h": 150, "step": 2},
+        {"id": "c", "label": "更新が必要", "x": 900, "y": 110, "w": 280, "h": 150, "step": 2, "tone": "emph"}
+      ], "edges": [
+        {"from": "a", "to": "b"}, {"from": "b", "to": "c"},
+        {"from": "c", "to": "a", "label": "音声を更新", "loop": true, "step": 3}
+      ]}</script>
+    </m-flow>
+  </div>
+  <div class="concl"><span>配る前に、すべてのステップに音声があるかを見る</span></div>
+</section>
+
+<section class="slide sec noconcl static" id="s-yubk4o"><h1>4　本のある教材を読む</h1></section>
+
+<section class="slide" id="s-4dez4a" data-article="sec-rmmjsu">
+  <h2>スライドと本を行き来する</h2>
+  <div class="body">
+    <m-flow size="30" style="height:380px" aria-label="本文からスライドで見るでスライドへ、スライドから本で読むで本文へ移る">
+      <script type="application/json">{"nodes": [
+        {"id": "s", "label": "スライド\n動きのある図と声", "x": 60, "y": 110, "w": 360, "h": 160, "step": 1},
+        {"id": "b", "label": "本\n読む文章", "x": 760, "y": 110, "w": 360, "h": 160, "step": 1, "tone": "term"}
+      ], "edges": [
+        {"from": "s", "to": "b", "label": "本で読む", "step": 2, "offset": 30},
+        {"from": "b", "to": "s", "label": "スライドで見る", "step": 3, "offset": 30}
+      ]}</script>
+    </m-flow>
+  </div>
+  <div class="concl"><span>動きは見て、説明は読み返す</span></div>
+</section>
+
+<section class="slide" id="s-fyfatq" data-article="sec-qw25xh sec-mjjtcd">
+  <h2>3 つの並べ方</h2>
+  <div class="body">
+    <m-cards style="height:330px" aria-label="並べ方は 3 つ。スライドだけ、スライドと本、本だけ">
+      <script type="application/json">{"cards": [
+        {"icon": "presentation", "title": "スライド", "text": "発表や、声を聞きながら見るときに"},
+        {"icon": "files", "title": "スライドと本", "text": "図と説明を一緒に追うときに"},
+        {"icon": "book", "title": "本", "text": "読み返しや予習に"}
+      ]}</script>
+    </m-cards>
+  </div>
+  <div class="concl"><span>本を作れるのは、まだコマンドの道具だけ</span></div>
+</section>
+
+<section class="slide sec noconcl static" id="s-2eau3o"><h1>5　配る</h1></section>
+
+<section class="slide" id="s-n2mvhn" data-article="sec-wgfnen sec-zkuigt sec-lnwjaw sec-qcefnn">
+  <h2>何を作って渡すか</h2>
+  <div class="body">
+    <m-cards style="height:440px" layout="grid" hilite="2" aria-label="したいことと作るもの。あとで直すなら Egatari ファイル、受け取る人には再生専用、LMS で進み具合を取るなら SCORM、動画の置き場所なら MP4">
+      <script type="application/json">{"cards": [
+        {"icon": "pencil", "title": "あとで直す", "text": "Egatari ファイル（.ega.html）を自分で保存"},
+        {"icon": "share", "title": "受け取る人に渡す", "text": "再生専用（.play.ega.html）"},
+        {"icon": "school", "title": "LMS で進み具合を取る", "text": "SCORM（.scorm.zip）"},
+        {"icon": "movie", "title": "動画の置き場所に載せる", "text": "MP4（Google Colab で作る）"}
+      ]}</script>
+    </m-cards>
+  </div>
+  <div class="concl"><span>ふつうに配るなら、再生専用のファイル 1 つでよい</span></div>
+</section>
+
+<section class="slide" id="s-sjefli" data-article="sec-w5eykx">
+  <h2>受け取る人に伝えること</h2>
+  <div class="body">
+    <p class="big" data-step="1">「ダウンロードしてから、<br>ブラウザで開いてください」</p>
+    <m-cards style="height:230px" data-from="2" per-step="0" aria-label="気をつけること 2 つ。Google ドライブのプレビューでは動かない。iPhone と iPad は Egatari Viewer で開く">
+      <script type="application/json">{"cards": [
+        {"icon": "eye", "title": "ドライブのプレビュー", "text": "スライドは動かない", "tone": "muted"},
+        {"icon": "device-mobile", "title": "iPhone・iPad", "text": "Egatari Viewer で開く"}
+      ]}</script>
+    </m-cards>
+  </div>
+  <div class="concl"><span>配る前に、自分のでない PC で 1 枚再生する</span></div>
+</section>
+
+<section class="slide" id="s-okrz4h" data-article="sec-42m562">
+  <h2>発表で、しおりに飛ぶ</h2>
+  <div class="body">
+    <m-flow size="30" style="height:380px" aria-label="発表の途中でしおりのボタンを押すと、そのスライドに飛ぶ。元の位置に戻るで、もとの所へ帰る">
+      <script type="application/json">{"nodes": [
+        {"id": "a", "label": "発表の途中\nスライド 9", "x": 0, "y": 110, "w": 340, "h": 160, "step": 1},
+        {"id": "b", "label": "しおり「付録」\n付録の扉", "x": 820, "y": 110, "w": 360, "h": 160, "step": 2, "tone": "term"}
+      ], "edges": [
+        {"from": "a", "to": "b", "label": "しおりのボタン", "step": 2, "offset": 30},
+        {"from": "b", "to": "a", "label": "元の位置に戻る", "step": 3, "offset": 30}
+      ]}</script>
+    </m-flow>
+  </div>
+  <div class="concl"><span>質疑で見せ直す材料は、付録に置いてしおりを付ける</span></div>
+</section>
+
+</div>
+</body>
+</html>
