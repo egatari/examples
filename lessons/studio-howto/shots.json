@@ -95,11 +95,11 @@
     {
       "file": "images/audio-panel-1280.png",
       "test": "tools/test-app-audio.mjs --shots",
-      "app": "Egatari Studio 0.6.19-rc.1 (e0b54ab5)",
-      "taken": "2026-11-23",
+      "app": "Egatari Studio 0.6.19 (54556538)",
+      "taken": "2026-11-24",
       "usedIn": "article/03.md — 音声のパネル：AI 音声をこの PC で作る・録音・クラウドで作る",
       "label": "fig-audio-panel",
-      "sha256": "1bc28ce1e934c26971b7320c8348e69c89b12bbe1235ba5e5fb0055c86651f95"
+      "sha256": "f808c334d4fc6446ca09943066ca5b0f16db4a8b91c3471358b2d6bacaf8bae9"
     },
     {
       "file": "images/check-reading-1280.png",
@@ -113,11 +113,11 @@
     {
       "file": "images/audio-stale-1280.png",
       "test": "tools/test-app-audio.mjs --shots",
-      "app": "Egatari Studio 0.6.19-rc.1 (e0b54ab5)",
-      "taken": "2026-11-23",
+      "app": "Egatari Studio 0.6.19 (54556538)",
+      "taken": "2026-11-24",
       "usedIn": "article/03.md — 音声の更新が必要なとき",
       "label": "fig-audio-stale",
-      "sha256": "9a1c08b881a57e217c54dbe49e4538afdd4e6d18d02088a1c60ff7e9867c40fe"
+      "sha256": "a99a0f1da3389ba9be0898432cdaf30095de4f9fb967d77214a535762fed95d1"
     },
     {
       "file": "images/book-reader-1280.png",
@@ -167,20 +167,20 @@
     {
       "file": "images/bookmark-bar-1280.png",
       "test": "tools/test-app-bookmark.mjs --shots（しおりの名前を「付録」にした写しで流した）",
-      "app": "Egatari Studio 0.6.19-rc.1 (e0b54ab5)",
-      "taken": "2026-11-23",
+      "app": "Egatari Studio 0.6.19 (54556538)",
+      "taken": "2026-11-24",
       "usedIn": "article/05.md — 発表する：発表者ビューとしおり",
       "label": "fig-bookmark-bar",
-      "sha256": "94dad27760a35a3d4234f6f223ff1841d7883cbcbc8aefa687406c336316f945"
+      "sha256": "9998fb903c5e6f13827de6c98b1e75efdfbb0eb54ac76203dbc133913bf13112"
     },
     {
       "file": "images/bookmark-back-1280.png",
       "test": "tools/test-app-bookmark.mjs --shots（しおりの名前を「付録」にした写しで流した）",
-      "app": "Egatari Studio 0.6.19-rc.1 (e0b54ab5)",
-      "taken": "2026-11-23",
+      "app": "Egatari Studio 0.6.19 (54556538)",
+      "taken": "2026-11-24",
       "usedIn": "article/05.md — 発表する：発表者ビューとしおり",
       "label": "fig-bookmark-back",
-      "sha256": "10d9316137088a055282f5e3b6f1a3961d30bd8e09118a49bd5d65f6ced3ae55"
+      "sha256": "859aefa3f66ddf4c5b2c5d1d14c44250f4267e7b0a8e184b4af5fe5c18d73118"
     },
     {
       "file": "images/book-readin-1280.png",
@@ -194,8 +194,8 @@
     {
       "file": "images/rights-first-save.png",
       "test": "tools/test-app-file-info.mjs（作成者の名前を架空の A 高校 国語科・A 高校 情報科に替えた写しで流し、窓だけを切り出した）",
-      "app": "Egatari Studio 0.6.19-rc.1 (e0b54ab5)",
-      "taken": "2026-11-23",
+      "app": "Egatari Studio 0.6.19 (54556538)",
+      "taken": "2026-11-24",
       "usedIn": "article/05.md — 権利の表示",
       "label": "fig-first-save",
       "sha256": "dbfb5efbe1b7ffc7cf0ff3e94b4e91057efd16d88e2b24d886a7c8d9de59fec6"
@@ -203,17 +203,17 @@
     {
       "file": "images/file-info-panel.png",
       "test": "tools/test-app-file-info.mjs（同上。キャンセルで欄を戻した直後に 1 枚足して撮り、パネルだけを切り出した）",
-      "app": "Egatari Studio 0.6.19-rc.1 (e0b54ab5)",
-      "taken": "2026-11-23",
+      "app": "Egatari Studio 0.6.19 (54556538)",
+      "taken": "2026-11-24",
       "usedIn": "article/05.md — 権利の表示",
       "label": "fig-file-info",
-      "sha256": "273cac999b827ed8c56c60d4e5cc009a87ca4cf07b6ec7fa7242c13b9790ab50"
+      "sha256": "9b1a98d9c7d1d62297dd4e652b7aa6dfc8f4627dadb2d09b2adba397fa72fec3"
     },
     {
       "file": "images/scorm-dialog.png",
       "test": "tools/test-app-scorm.mjs（dialog-ja.png から窓だけを切り出した）",
-      "app": "Egatari Studio 0.6.19-rc.1 (e0b54ab5)",
-      "taken": "2026-11-23",
+      "app": "Egatari Studio 0.6.19 (54556538)",
+      "taken": "2026-11-24",
       "usedIn": "article/05.md — LMS に載せる（SCORM）",
       "label": "fig-scorm",
       "sha256": "0a26fdf63b298af4b763b11cb371b98a9fa8f8a7c72d6984e55dd50936fdb0a3"
@@ -221,8 +221,8 @@
     {
       "file": "images/image-insert.png",
       "test": "tools/test-app-image-insert.mjs（出すステップを選んだ所で 1 枚撮る行を足した写しで流し、窓だけを切り出した）",
-      "app": "Egatari Studio 0.6.19-rc.1 (e0b54ab5)",
-      "taken": "2026-11-23",
+      "app": "Egatari Studio 0.6.19 (54556538)",
+      "taken": "2026-11-24",
       "usedIn": "article/02.md — 画像を入れる",
       "label": "fig-image-insert",
       "sha256": "17527d145a988e79b28533adb3bfc33571df65026b6dce2739fcac8bb26fd39c"
@@ -230,8 +230,8 @@
     {
       "file": "images/find-replace.png",
       "test": "tools/test-app-undo.mjs（次へで移った所で 1 枚撮る行を足した写しで流し、窓だけを切り出した）",
-      "app": "Egatari Studio 0.6.19-rc.1 (e0b54ab5)",
-      "taken": "2026-11-23",
+      "app": "Egatari Studio 0.6.19 (54556538)",
+      "taken": "2026-11-24",
       "usedIn": "article/02.md — 検索と置換",
       "label": "fig-find-replace",
       "sha256": "a9a51398b2fda338e54f35d8dc216b4a356643ba31a2e532ea02b0684cb36ff8"
@@ -239,8 +239,8 @@
     {
       "file": "images/source-line.png",
       "test": "tools/test-app-undo.mjs（出典の行を挿入した所で 1 枚撮る行を足した写しで流し、プレビューだけを切り出した）",
-      "app": "Egatari Studio 0.6.19-rc.1 (e0b54ab5)",
-      "taken": "2026-11-23",
+      "app": "Egatari Studio 0.6.19 (54556538)",
+      "taken": "2026-11-24",
       "usedIn": "article/02.md — 画像を入れる",
       "label": "fig-source-line",
       "sha256": "26f7eec0ed93d83552f65dcc7af04e13f39f3f9654d850aa26a2b47a9e64ea61"
