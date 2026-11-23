@@ -1,0 +1,169 @@
+{
+  "componentsCatalogue": "2",
+  "metadata": {
+    "license": "CC-BY-4.0",
+    "copyright": "© 2026 雲居玄道",
+    "creators": [
+      "雲居玄道"
+    ]
+  },
+  "article": {
+    "chapters": [
+      "article/00-preface.md",
+      "article/01.md",
+      "article/02.md",
+      "article/03.md",
+      "article/04.md",
+      "article/05.md",
+      "article/90-appendix.md"
+    ]
+  },
+  "articleLinks": {
+    "s-ghz3ej": {
+      "sec-wj36dy": {
+        "article": "d0cf376e30e2bd6033a22864d6108ca5ec3467a25a1951b122e13408077b5afe",
+        "slide": "a6a4ede32610c97a328b08cdfa5089869c6ba80e97689005e6e767a97f085720"
+      }
+    },
+    "s-4l5yya": {
+      "sec-3hrzeo": {
+        "article": "50a2ffd94699722a5a98d603e6aedafff9b30ac45b796b52a25b0741e57d718d",
+        "slide": "8852466d7162062d223ad7d2a8a3c075c4fe5b4ea54ef96369ef680474ec15f4"
+      },
+      "sec-ukipid": {
+        "article": "504f239c84a57b99a4b52f364231d16c063e5c10d158003a49caac48cda7e9a4",
+        "slide": "8852466d7162062d223ad7d2a8a3c075c4fe5b4ea54ef96369ef680474ec15f4"
+      }
+    },
+    "s-cez5ix": {
+      "sec-uhsvfw": {
+        "article": "404bc8659599ab4985060112315acab6dc64ca47ddef7c1f276086344886c512",
+        "slide": "8b175d9432b1fc1dbefc98b52e60f0757553ab346381b1d0a9204580bf28ad00"
+      },
+      "sec-wimnxl": {
+        "article": "d9f03f607bf4099abb1e1376954892cab0c357aee48875e0dc3dada3434c87bc",
+        "slide": "8b175d9432b1fc1dbefc98b52e60f0757553ab346381b1d0a9204580bf28ad00"
+      }
+    },
+    "s-wobzcg": {
+      "sec-jgagrk": {
+        "article": "16cb77b9f278ab42e3aeaa02c27a2836c93145d81b01d4a4b3132a3dd23f1141",
+        "slide": "5332a6eab256833a976346d72938976d05a0331c6b42fce0d71ee181b93e10dc"
+      }
+    },
+    "s-koafs7": {
+      "sec-5ctsxt": {
+        "article": "6794b5fa3903d2fec2d43033c71a06d0358303dd27222640207fb961d3bebead",
+        "slide": "b5936ab512ea95ba078b0a04d04b4905fdd4267b04552ca9216e44df42362f81"
+      }
+    },
+    "s-ruakjr": {
+      "sec-buc3rn": {
+        "article": "7da566bb41c24841d07058297ded03adddee1e12108f4bd3d560c886ff8bd34d",
+        "slide": "b6f3012cd10999d09bb4519eb074059c0bc8ba8648913a14024319cc8e7e4765"
+      }
+    },
+    "s-pdccss": {
+      "sec-teeeok": {
+        "article": "ecfead8436684e49b5f70021fa40531c8d7f9939a3c3d359c46b75918f4b0a93",
+        "slide": "2f4c3d78284871ec6316b454a85fd4b948187f8c63cccabd76e5eaf5a671a1e5"
+      }
+    },
+    "s-xlpe4n": {
+      "sec-j5pqpu": {
+        "article": "e86bc8071a9a9d7b73cfa2d698eebfd2edffc264c3e8ff0ee8caa7d69968adaf",
+        "slide": "5c7568a44cbef31461cae4cf0e03e582bf048a8b49e7ba5f6521379b9828c260"
+      },
+      "sec-dmzabm": {
+        "article": "404fdf2fb1151edf36f95a3c5d6f0ad4df9bf47755882451fab1d3fd73c568cd",
+        "slide": "5c7568a44cbef31461cae4cf0e03e582bf048a8b49e7ba5f6521379b9828c260"
+      },
+      "sec-dvapv4": {
+        "article": "e5757ce49d8b5fdf1a48965e4dd663b7194b55f0965ec34de0f20515be51020e",
+        "slide": "5c7568a44cbef31461cae4cf0e03e582bf048a8b49e7ba5f6521379b9828c260"
+      }
+    },
+    "s-7j7zph": {
+      "sec-tze2ae": {
+        "article": "5418f885340324fd0d1e4bec454f39243510e3dc1fb66f461b735387511a0b89",
+        "slide": "a9d255a71f283b190c4a7f148f25573613c52c109795dfa641e7d42b34e4c364"
+      },
+      "sec-gpsykn": {
+        "article": "28d82139ea6140c07c10b0fb3b1c899420677a4de9c4593d101083a60a2536db",
+        "slide": "a9d255a71f283b190c4a7f148f25573613c52c109795dfa641e7d42b34e4c364"
+      },
+      "sec-kvoipu": {
+        "article": "413758e9e44e0267f53bd3f4849779ca81cdfee13ef756150f257102143b9f97",
+        "slide": "a9d255a71f283b190c4a7f148f25573613c52c109795dfa641e7d42b34e4c364"
+      }
+    },
+    "s-qyneg6": {
+      "sec-ilci3f": {
+        "article": "24c80da88aba639aa04e6f16d71f59d81848b69e3213cb491d3651653023977f",
+        "slide": "3d2799846314142c02a8e50e48a12e48178810dbf586d23b1deb403718353dca"
+      },
+      "sec-3w6zx3": {
+        "article": "30dab988d0232718724f5f37fae075794590f3587b3f3dde82268b067625f5a9",
+        "slide": "3d2799846314142c02a8e50e48a12e48178810dbf586d23b1deb403718353dca"
+      }
+    },
+    "s-z2hven": {
+      "sec-twy5u5": {
+        "article": "6ee046d6db10792169637ea438efab28abd4d66af49a1828b97f7c62c69d79cd",
+        "slide": "c23d23dc0c5b39855f05b7c129936aa18f6a91947bea767fa3ff7c3dea84246d"
+      }
+    },
+    "s-2wntwa": {
+      "sec-n25flm": {
+        "article": "4605652d7ed8ab8d492c5c5ddbfcbbc087f5477df4b6a288f67afe61432f48b9",
+        "slide": "15f4a84da85ff19e85d97af92be6226a1ad87ef93ef7fed05d8349a98e76a3d5"
+      }
+    },
+    "s-4dez4a": {
+      "sec-rmmjsu": {
+        "article": "0de3a35b39cd8cb442a9aa22feeeb26986123f48a0a8e572409d6a1d345372de",
+        "slide": "2e3cc5fa5a7cd56e07fb9f56635e7d44c08646a967f9a966ae1dccf5600d9389"
+      }
+    },
+    "s-fyfatq": {
+      "sec-qw25xh": {
+        "article": "7adf40ddb0b78f50dc0fa243ea060ee42c7d79d0a373a1961b426be9e8626619",
+        "slide": "451465df30717b70ae1535801a0085fe20c769d146346e56c1cf6781c9e0316c"
+      },
+      "sec-mjjtcd": {
+        "article": "f667fe60899d8a755da263ede21d7750d7a961051a8c3dc8d18355544526caad",
+        "slide": "451465df30717b70ae1535801a0085fe20c769d146346e56c1cf6781c9e0316c"
+      }
+    },
+    "s-n2mvhn": {
+      "sec-wgfnen": {
+        "article": "dddabf3bb788d60bc6259bcc9977a5769f5ff1eb4842805ef69a5a6ef544d2d1",
+        "slide": "b139a4dcdbd6a46972751867c0d9c595c813bd80338acb1205249a950fef0615"
+      },
+      "sec-zkuigt": {
+        "article": "d9af36eeb42c99e643302e5a57fcc2b95b5e7a52c3326611f69e00fcdc06044c",
+        "slide": "b139a4dcdbd6a46972751867c0d9c595c813bd80338acb1205249a950fef0615"
+      },
+      "sec-lnwjaw": {
+        "article": "b0c11edcbb7c50e659937f1029e10f4eef72afcb734c717cd51d0805d4479ba6",
+        "slide": "b139a4dcdbd6a46972751867c0d9c595c813bd80338acb1205249a950fef0615"
+      },
+      "sec-qcefnn": {
+        "article": "530123936510bf71c35dc40670779340b32f48a0f91f8465f5df65b14bc40adb",
+        "slide": "b139a4dcdbd6a46972751867c0d9c595c813bd80338acb1205249a950fef0615"
+      }
+    },
+    "s-sjefli": {
+      "sec-w5eykx": {
+        "article": "d1765ce0c072c291b2b26c1d7f9d65aa8dbb537b0bd8c637e1fe4e3d9e4db2b8",
+        "slide": "89cb35f3deb1fc33fa6295f6ca6a5e325ef43594c5445b49d0b458d59cd27f73"
+      }
+    },
+    "s-okrz4h": {
+      "sec-42m562": {
+        "article": "6fe8942e981bf3577130bb4abaefb50a68acba9de1623d163be29d2fcbb5629e",
+        "slide": "722ec90f078b143b9e58d9be9f456aef10aceb384e4f2748f668acc57f5335f9"
+      }
+    }
+  }
+}
