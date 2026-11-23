@@ -1,0 +1,57 @@
+{
+  "v": 1,
+  "request": "高校 1 年の言語文化で、『徒然草』第五十二段「仁和寺にある法師」を読む教材を 7 枚で作ってください。本文と説明のスライドは縦書きにそろえ、横書きでしか置けない法師の道のりの図と「けり」の表だけを横書きにしてまとめて置いてください。品詞分解は m-kobun で、現代語訳を添えてください。",
+  "category": "teaching",
+  "subcategory": "class",
+  "purposes": [
+    "text-structure",
+    "process"
+  ],
+  "subjects": [
+    "japanese"
+  ],
+  "audiences": [
+    "high-school"
+  ],
+  "theme": "kokugo",
+  "parts": [
+    "m-flow",
+    "m-kobun"
+  ],
+  "structure": [
+    {
+      "heading": "兼好法師『徒然草』仁和寺にある法師",
+      "point": "表紙"
+    },
+    {
+      "heading": "一　ただひとり、徒歩より",
+      "point": "本文の前半を縦書きで、1 文ずつ現代語訳と並べる"
+    },
+    {
+      "heading": "二　品詞に分けて読む",
+      "point": "品詞分解（m-kobun 縦書き）：帰りにけり・こそ〜けれ・こそ〜なれ"
+    },
+    {
+      "heading": "三　山までは見ず",
+      "point": "法師の言葉を縦書きで、現代語訳と並べる"
+    },
+    {
+      "heading": "石清水八幡宮：麓と山の上",
+      "point": "横書きの流れ図：仁和寺 → 麓 → 山の上の本社"
+    },
+    {
+      "heading": "助動詞「けり」の二つの意味",
+      "point": "横書きの表：「けり」の過去と詠嘆"
+    },
+    {
+      "heading": "結び　先達はあらまほし",
+      "point": "結び：先達はあらまほし（縦書き）"
+    }
+  ],
+  "book": false,
+  "lang": "ja",
+  "rights": {
+    "license": "CC-BY-4.0",
+    "attribution": "Gendo Kumoi (egatari/examples)"
+  }
+}
