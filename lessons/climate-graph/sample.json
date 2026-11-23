@@ -1,0 +1,58 @@
+{
+  "v": 1,
+  "request": "中学・高校の地理で、雨温図の読み方を 7 枚で教える教材を作ってください。札幌・金沢・東京・那覇の平年値（気象庁、1991〜2020 年）の雨温図を画像で入れ（置き方は 2 列と全幅）、代替テキストと出典の行を付けてください。年較差と冬の降水量を問う確認問題を 2 問（予想と答え）入れ、LMS では「すべて正解したら完了」にします。短い本も付けてください。",
+  "category": "teaching",
+  "subcategory": "class",
+  "purposes": [
+    "compare",
+    "predict"
+  ],
+  "subjects": [
+    "social-studies"
+  ],
+  "audiences": [
+    "primary-junior",
+    "high-school"
+  ],
+  "theme": "default",
+  "parts": [
+    "m-cards",
+    "m-predict"
+  ],
+  "structure": [
+    {
+      "heading": "雨温図を読む",
+      "point": "表紙（中学・高校 地理）"
+    },
+    {
+      "heading": "雨温図の見方",
+      "point": "東京の雨温図（2 列の左）。棒は降水量、折れ線は気温"
+    },
+    {
+      "heading": "問 1：気温の差が最も大きい都市",
+      "point": "確認問題：年較差が最も大きいのは札幌（25.5 ℃）"
+    },
+    {
+      "heading": "札幌と那覇を比べる",
+      "point": "札幌（2 列の左）と那覇（2 列の右）の雨温図"
+    },
+    {
+      "heading": "問 2：冬に雨や雪が最も多い都市",
+      "point": "確認問題：冬の降水量が最も多いのは金沢（719.7 mm）"
+    },
+    {
+      "heading": "日本海側の冬",
+      "point": "冬の降水量の横棒（全幅）。季節風の理由"
+    },
+    {
+      "heading": "雨温図から分かること",
+      "point": "まとめの 3 枚"
+    }
+  ],
+  "book": true,
+  "lang": "ja",
+  "rights": {
+    "license": "CC-BY-4.0",
+    "attribution": "Gendo Kumoi (egatari/examples)。データ：気象庁「過去の気象データ検索」の平年値（1991〜2020 年）をもとに作成"
+  }
+}

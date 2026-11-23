@@ -1,0 +1,62 @@
+{
+  "componentsCatalogue": "2",
+  "metadata": {
+    "license": "CC-BY-4.0",
+    "copyright": "© 2026 雲居玄道",
+    "creators": ["雲居玄道"],
+    "attribution": "気象のデータ：気象庁「過去の気象データ検索」の平年値（1991〜2020 年）をもとに作成。",
+    "completion": {"checks": "correct"}
+  },
+  "article": {
+    "chapters": [
+      "article/01.md"
+    ]
+  },
+  "articleLinks": {
+    "s-ubwwez": {
+      "sec-2e3qcr": {
+        "article": "f9d69358345c0d3b9a37992101c096bb1d9e912d46a41039b08db7c559daa90c",
+        "slide": "678f3c0c8e6d779e676eaff609ed3871143578c6a8d9618e12fd3f01df3f65d7"
+      }
+    },
+    "s-msgcum": {
+      "sec-klrtqv": {
+        "article": "c43d38bda9d133ea5f586f13b0f536c458a3503151755744ff3c66c63dcbca36",
+        "slide": "19abda60846e49b1d2ad37383711616b2df36959c3cb1294bc9e7d212c6a787a"
+      }
+    },
+    "s-qqrdyp": {
+      "sec-klrtqv": {
+        "article": "c43d38bda9d133ea5f586f13b0f536c458a3503151755744ff3c66c63dcbca36",
+        "slide": "80b3f48335abb7866dd10883348e128172f32622711b31b877e7284757df3a97"
+      }
+    },
+    "s-tncg2g": {
+      "sec-gsuml3": {
+        "article": "7360771bfce8899b61bde9cc50138328072f34a22c72bb87542c2370f5347cc3",
+        "slide": "89c8f37de2081e8dfb787e2f71a76422518d1359acbebd855f459670d931ba00"
+      }
+    },
+    "s-fuqfxx": {
+      "sec-gsuml3": {
+        "article": "7360771bfce8899b61bde9cc50138328072f34a22c72bb87542c2370f5347cc3",
+        "slide": "a9ca0af987ff04127c2de318a599c9dcff70f9641979a9aaa4cbcf2d60affb41"
+      }
+    },
+    "s-sd25ep": {
+      "sec-klrtqv": {
+        "article": "c43d38bda9d133ea5f586f13b0f536c458a3503151755744ff3c66c63dcbca36",
+        "slide": "8e19bd355568de3067bb39e26502ff9712ba13fee6528ab1b0e422373d439866"
+      },
+      "sec-gsuml3": {
+        "article": "7360771bfce8899b61bde9cc50138328072f34a22c72bb87542c2370f5347cc3",
+        "slide": "8e19bd355568de3067bb39e26502ff9712ba13fee6528ab1b0e422373d439866"
+      },
+      "sec-wk7ezy": {
+        "article": "38d8b55136e9278a39669259768e8ce873634e0172b36a9a9d437d0fb2c83d38",
+        "slide": "8e19bd355568de3067bb39e26502ff9712ba13fee6528ab1b0e422373d439866"
+      }
+    }
+  },
+  "docId": "3af34b87-f0eb-43a2-87c5-4d538c3818b4"
+}
