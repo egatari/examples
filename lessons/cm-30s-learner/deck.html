@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="egatari-brand">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Egatari CM 学習者向け（30 秒）</title>
+<!--
+  学習者向けの 30 秒の CM（作者 11/25：構成の案 2 を 30 秒に）。配られる PDF のスライドと比べ、「動く・聴ける・読める・書ける」を 1 小節ずつ見せる。
+  画面の写しは使わず、Egatari の動き（モーフ・ステップ・描く線）だけ。「」は使わず、PDF は色づいて動き出す。本は見開き（のど・ページ番号・番号つき見出し）で 1 回めくる（作者 11/25）。12 小節（96 BPM、1 小節 2.5 秒）、1 コマ 2 小節。右下のページ番号は出さない（.pn）。声なし（台本は字と同じ文で、読み上げない）。
+  図の中身は形だけ（棒・行に意味はない）。PDF は一般の形として描き、実在の製品のロゴは出さない。
+-->
+<style>
+.cm-box { position: relative; height: 540px; }
+.cm-box > * { position: absolute; }
+.cm-frame { border: 4px solid var(--title); border-radius: 12px; background: var(--bg); }
+.cm-pdf { border-color: color-mix(in srgb, var(--muted) 70%, var(--bg)); }
+.cm-ink { fill: none; stroke: var(--title); stroke-linecap: round; }
+.cm-bar { fill: none; stroke: var(--term); stroke-width: 70; stroke-linecap: butt; }
+.cm-bar-e { stroke: var(--emph); }
+.cm-ln { fill: none; stroke: color-mix(in srgb, var(--muted) 55%, var(--bg)); stroke-linecap: round; }
+.cm-dot { fill: var(--term); }
+.cm-grey .cm-ink, .cm-grey .cm-bar { stroke: color-mix(in srgb, var(--muted) 45%, var(--bg)); }
+.cm-grey .cm-dot { fill: color-mix(in srgb, var(--muted) 45%, var(--bg)); }
+.cm-tag { left: 262px; top: 448px; padding: 0 14px; border-radius: 8px; font-weight: 700; color: var(--bg); background: var(--muted); }
+.cm-mute path, .cm-mute line { fill: none; stroke: color-mix(in srgb, var(--muted) 75%, var(--bg)); stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+.cm-band { left: 192px; top: 436px; width: 800px; height: 92px; border-radius: 14px; background: color-mix(in srgb, var(--fg) 85%, var(--bg)); color: var(--bg); display: flex; align-items: center; gap: 0; padding-left: 110px; font-size: 32px; box-sizing: border-box; }
+.cm-spk { left: 214px; top: 452px; }
+.cm-spk path { fill: none; stroke: var(--bg); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+.cm-hl { fill: none; stroke: color-mix(in srgb, var(--brand-hl) 60%, var(--bg)); stroke-width: 30; stroke-linecap: butt; }
+.cm-hide { fill: var(--brand-hl); }
+.cm-pen { fill: none; stroke: var(--emph); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+.cm-penbody { fill: var(--fg); }
+.cm-pentip { fill: var(--emph); }
+.cm-gut { fill: color-mix(in srgb, var(--muted) 14%, var(--bg)); }
+.cm-gutl { fill: none; stroke: color-mix(in srgb, var(--muted) 45%, var(--bg)); stroke-width: 2; }
+.cm-bh { fill: var(--title); font-size: 26px; font-weight: 700; }
+.cm-tl { fill: none; stroke: color-mix(in srgb, var(--muted) 55%, var(--bg)); stroke-width: 10; stroke-linecap: round; }
+.cm-pg { fill: var(--muted); font-size: 24px; text-anchor: middle; }
+.cm-pg-bg { fill: var(--bg); }
+.cm-turn { fill: var(--bg); stroke: color-mix(in srgb, var(--muted) 50%, var(--bg)); stroke-width: 3; filter: drop-shadow(-10px 0 12px color-mix(in srgb, var(--fg) 25%, transparent)); }
+.cm-turn-l { filter: drop-shadow(10px 0 12px color-mix(in srgb, var(--fg) 25%, transparent)); }
+.pn { visibility: hidden; }
+.cover .cm-logo { position: absolute; left: calc(50% - 95px); top: 90px; }
+.cover h1 { top: 300px; }
+.cover .au { top: 470px; }
+</style>
+</head>
+<body>
+<div id="stage">
+
+<section class="slide noconcl static" id="s-7ddnyh">
+  <h2><span data-id="c0">配られた PDF は、止まったまま。</span></h2>
+  <div class="body">
+    <div class="cm-box cm-grey" aria-label="配られた PDF のスライド。棒グラフと箇条書きが初めから全部出ていて、灰色のまま動かない。音も出ない">
+      <div class="cm-frame cm-pdf" data-id="blk" style="left:242px;top:10px;width:700px;height:500px"></div>
+      <svg data-id="chart" viewBox="0 0 340 420" width="340" height="420" style="left:282px;top:40px" aria-hidden="true">
+        <path d="M20 30H300" class="cm-ink" style="stroke-width:20"/>
+        <path d="M70 400V250" class="cm-bar"/><path d="M170 400V170" class="cm-bar"/><path d="M270 400V70" class="cm-bar"/>
+      </svg>
+      <svg data-id="list" viewBox="0 0 280 300" width="280" height="300" style="left:642px;top:110px" aria-hidden="true">
+        <circle cx="14" cy="60" r="10" class="cm-dot"/><path d="M44 60H250" class="cm-ln" style="stroke-width:16"/>
+        <circle cx="14" cy="150" r="10" class="cm-dot"/><path d="M44 150H210" class="cm-ln" style="stroke-width:16"/>
+        <circle cx="14" cy="240" r="10" class="cm-dot"/><path d="M44 240H230" class="cm-ln" style="stroke-width:16"/>
+      </svg>
+      <span class="cm-tag">PDF</span>
+      <svg class="cm-mute" viewBox="0 0 130 100" width="130" height="100" style="left:980px;top:30px" aria-hidden="true">
+        <path d="M10 36H34L62 12V88L34 64H10Z"/><line x1="82" y1="32" x2="118" y2="68"/><line x1="118" y1="32" x2="82" y2="68"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="slide noconcl" data-morph id="s-3qhhfv">
+  <h2><span data-id="w1">動く。</span></h2>
+  <div class="body">
+    <div class="cm-box" aria-label="灰色の PDF に色が付き、動き出す。棒が 1 本ずつ伸び、箇条書きが 1 つずつ出る">
+      <div class="cm-frame" data-id="blk" style="left:242px;top:10px;width:700px;height:500px"></div>
+      <svg data-id="chart" viewBox="0 0 340 420" width="340" height="420" style="left:282px;top:40px" aria-hidden="true">
+        <path d="M20 30H300" class="cm-ink" style="stroke-width:20"/>
+        <path data-step="1" d="M70 400V250" class="draw cm-bar" pathLength="1" data-at="0"/>
+        <path data-step="2" d="M170 400V170" class="draw cm-bar" pathLength="1" data-at="0"/>
+      </svg>
+      <svg data-id="list" viewBox="0 0 280 300" width="280" height="300" style="left:642px;top:110px" aria-hidden="true">
+        <g data-step="1"><circle cx="14" cy="60" r="10" class="cm-dot"/><path d="M44 60H250" class="cm-ln" style="stroke-width:16"/></g>
+        <g data-step="2"><circle cx="14" cy="150" r="10" class="cm-dot"/><path d="M44 150H210" class="cm-ln" style="stroke-width:16"/></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="slide noconcl" data-morph id="s-k76lgs">
+  <h2><span data-id="w1">動く。</span><span data-id="w2">聴ける。</span></h2>
+  <div class="body">
+    <div class="cm-box" aria-label="スライドの下に字幕の帯が出て、声に合わせて字が出る。字幕に合わせて 3 本目の棒が伸びる">
+      <div class="cm-frame" data-id="blk" style="left:312px;top:20px;width:560px;height:400px"></div>
+      <svg data-id="chart" viewBox="0 0 340 420" width="272" height="336" style="left:344px;top:44px" aria-hidden="true">
+        <path d="M20 30H300" class="cm-ink" style="stroke-width:20"/>
+        <path d="M70 400V250" class="cm-bar"/><path d="M170 400V170" class="cm-bar"/>
+        <path data-step="1" d="M270 400V70" class="draw cm-bar cm-bar-e" pathLength="1" data-at="0"/>
+      </svg>
+      <svg data-id="list" viewBox="0 0 280 300" width="224" height="240" style="left:632px;top:108px" aria-hidden="true">
+        <circle cx="14" cy="60" r="10" class="cm-dot"/><path d="M44 60H250" class="cm-ln" style="stroke-width:16"/>
+        <circle cx="14" cy="150" r="10" class="cm-dot"/><path d="M44 150H210" class="cm-ln" style="stroke-width:16"/>
+        <g data-step="2"><circle cx="14" cy="240" r="10" class="cm-dot"/><path d="M44 240H230" class="cm-ln" style="stroke-width:16"/></g>
+      </svg>
+      <div class="cm-band"><span>いちばん伸びたのは</span><span data-step="1">&#x3000;3 本目</span></div>
+      <svg class="cm-spk" viewBox="0 0 80 60" width="80" height="60" aria-hidden="true">
+        <path d="M6 22H20L38 6V54L20 38H6Z"/><path class="draw" pathLength="1" data-at="0.2" d="M50 20Q58 30 50 40"/><path class="draw" pathLength="1" data-at="0.4" d="M60 10Q76 30 60 50"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="slide noconcl" data-morph id="s-xxpmtf">
+  <h2><span data-id="w1">動く。</span><span data-id="w2">聴ける。</span><span data-id="w3">読める。</span></h2>
+  <div class="body">
+    <div class="cm-box" aria-label="スライドが本の見開きに変わる。のど、ページ番号、番号つきの見出し、左ページの上に小さな図、本文の行がぎっしり。ページを 1 枚めくる">
+      <div class="cm-frame" data-id="blk" style="left:92px;top:8px;width:1000px;height:524px"></div>
+      <svg data-id="chart" viewBox="0 0 340 420" width="160" height="198" style="left:128px;top:86px" aria-hidden="true">
+        <path d="M20 30H300" class="cm-ink" style="stroke-width:20"/>
+        <path d="M70 400V250" class="cm-bar"/><path d="M170 400V170" class="cm-bar"/><path d="M270 400V70" class="cm-bar cm-bar-e"/>
+      </svg>
+      <svg data-id="book" viewBox="0 0 1000 524" width="1000" height="524" style="left:92px;top:8px" aria-hidden="true"><rect x="470" y="0" width="60" height="524" class="cm-gut"/><path d="M500 6V518" class="cm-gutl"/><text x="36" y="52" class="cm-bh" style="fill:var(--title)">2.1 棒の伸び</text><path d="M240 96H450M240 122H376M240 148H382M240 174H413M240 200H419M240 226H355" class="cm-tl"/><path d="M36 262H456M36 288H382M36 314H388M36 340H419M36 366H425M36 392H456M36 418H382M36 444H267" class="cm-tl"/><text x="536" y="52" class="cm-bh" style="fill:var(--title)">2.2 伸びた理由</text><path d="M536 96H956M536 122H882M536 148H888M536 174H919M536 200H925M536 226H956M536 252H882M536 278H888M536 304H919M536 330H925M536 356H956M536 382H882M536 408H888M536 434H919M536 460H767" class="cm-tl"/><text x="250" y="506" class="cm-pg">12</text><text x="750" y="506" class="cm-pg">13</text><g data-step="1"><path d="M532 6H996V518H532Z" class="cm-pg-bg"/><path d="M536 96H956M536 122H882M536 148H888M536 174H919M536 200H925M536 226H956M536 252H882M536 278H888M536 304H919M536 330H925M536 356H956M536 382H882M536 408H888M536 434H919M536 460H767" class="cm-tl"/><path d="M500 6Q640 -4 780 30L780 500Q640 530 500 518Z" class="cm-turn"/></g><g data-step="1" data-at="0.3"><path d="M532 6H996V518H532Z" class="cm-pg-bg"/><path d="M536 96H956M536 122H882M536 148H888M536 174H919M536 200H925M536 226H956M536 252H882M536 278H888M536 304H919M536 330H925M536 356H956M536 382H882M536 408H888M536 434H919M536 460H767" class="cm-tl"/><path d="M500 6Q360 -4 220 30L220 500Q360 530 500 518Z" class="cm-turn cm-turn-l"/></g><g data-step="1" data-at="0.6"><path d="M4 6H468V518H4Z" class="cm-pg-bg"/><path d="M36 96H456M36 122H382M36 148H388M36 174H419M36 200H425M36 226H456M36 252H382M36 278H388M36 304H419M36 330H425M36 356H456M36 382H382M36 408H388M36 434H419M36 460H267" class="cm-tl"/></g></svg>
+    </div>
+  </div>
+</section>
+
+<section class="slide noconcl static" id="s-td7y7k">
+  <h2><span data-id="w1">動く。</span><span data-id="w2">聴ける。</span><span data-id="w3">読める。</span><span style="opacity:0">次</span></h2>
+  <div class="body">
+    <div class="cm-box" aria-label="めくった先の見開き。14 ページと 15 ページ">
+      <div class="cm-frame" data-id="blk" style="left:92px;top:8px;width:1000px;height:524px"></div>
+      <svg data-id="book2" viewBox="0 0 1000 524" width="1000" height="524" style="left:92px;top:8px" aria-hidden="true"><rect x="470" y="0" width="60" height="524" class="cm-gut"/><path d="M500 6V518" class="cm-gutl"/><text x="36" y="52" class="cm-bh" style="fill:var(--title)">2.3 くり返して覚える</text><path d="M36 96H456M36 122H382M36 148H388M36 174H419M36 200H425M36 226H456M36 252H382M36 278H388M36 304H419M36 330H425M36 356H456M36 382H382M36 408H388M36 434H419M36 460H267" class="cm-tl"/><text x="536" y="52" class="cm-bh" style="fill:var(--title)">2.4 まとめ</text><path d="M536 96H956M536 122H882M536 148H888M536 174H919M536 200H925M536 226H956M536 252H882M536 278H888M536 304H919M536 330H925M536 356H956M536 382H882M536 408H888M536 434H919M536 460H767" class="cm-tl"/><text x="250" y="506" class="cm-pg">14</text><text x="750" y="506" class="cm-pg">15</text></svg>
+    </div>
+  </div>
+</section>
+
+<section class="slide noconcl" id="s-7dt37x">
+  <h2><span data-id="w1">動く。</span><span data-id="w2">聴ける。</span><span data-id="w3">読める。</span><span data-id="w4">書ける。</span></h2>
+  <div class="body">
+    <div class="cm-box" aria-label="スライドに戻り、ペンで手書きの線を引く。3 本目の棒を丸で囲み、箇条書きに下線">
+      <div class="cm-frame" data-id="blk" style="left:312px;top:20px;width:560px;height:400px"></div>
+      <svg data-id="chart" viewBox="0 0 340 420" width="272" height="336" style="left:344px;top:44px" aria-hidden="true">
+        <path d="M20 30H300" class="cm-ink" style="stroke-width:20"/>
+        <path d="M70 400V250" class="cm-bar"/><path d="M170 400V170" class="cm-bar"/><path d="M270 400V70" class="cm-bar cm-bar-e"/>
+      </svg>
+      <svg data-id="list" viewBox="0 0 280 300" width="224" height="240" style="left:632px;top:108px" aria-hidden="true">
+        <circle cx="14" cy="60" r="10" class="cm-dot"/><path d="M44 60H250" class="cm-ln" style="stroke-width:16"/>
+        <circle cx="14" cy="150" r="10" class="cm-dot"/><path d="M44 150H210" class="cm-ln" style="stroke-width:16"/>
+        <circle cx="14" cy="240" r="10" class="cm-dot"/><path d="M44 240H230" class="cm-ln" style="stroke-width:16"/>
+      </svg>
+      <svg data-step="1" viewBox="0 0 560 400" width="560" height="400" style="left:312px;top:20px;overflow:visible" aria-hidden="true">
+        <path class="draw cm-pen" pathLength="1" data-at="0" d="M296 70C266 38 190 46 184 104C178 166 250 190 294 154C324 128 318 88 282 64"/>
+        <path class="draw cm-pen" pathLength="1" data-at="0.5" d="M352 304Q430 294 512 306"/>
+      </svg>
+      <div class="cm-penbox" data-step="1" data-at="0.5" style="left:826px;top:270px"><svg viewBox="0 0 64 64" width="64" height="64" aria-hidden="true"><path d="M8 56L14 40L46 8L56 18L24 50Z" class="cm-penbody"/><path d="M8 56L14 40L24 50Z" class="cm-pentip"/></svg></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide noconcl" id="s-fevszx">
+  <h2><span data-id="w1">動く。</span><span data-id="w2">聴ける。</span><span data-id="w3">読める。</span><span data-id="w4">書ける。</span><span style="opacity:0">本</span></h2>
+  <div class="body">
+    <div class="cm-box" aria-label="本に戻り、本文の 1 行にマーカーを引き、その字を塗りつぶして隠し、触れると字が現れる">
+      <div class="cm-frame" data-id="blk" style="left:92px;top:8px;width:1000px;height:524px"></div>
+      <svg data-id="book2" viewBox="0 0 1000 524" width="1000" height="524" style="left:92px;top:8px" aria-hidden="true"><rect x="470" y="0" width="60" height="524" class="cm-gut"/><path d="M500 6V518" class="cm-gutl"/><text x="36" y="52" class="cm-bh" style="fill:var(--title)">2.3 くり返して覚える</text><path d="M36 96H456M36 122H382M36 148H388M36 174H419M36 200H425M36 226H456M36 252H382M36 278H388M36 304H419M36 330H425M36 356H456M36 382H382M36 408H388M36 434H419M36 460H267" class="cm-tl"/><text x="536" y="52" class="cm-bh" style="fill:var(--title)">2.4 まとめ</text><path d="M536 96H956M536 122H882M536 148H888M536 174H919M536 200H925M536 226H956M536 252H882M536 278H888M536 304H919M536 330H925M536 356H956M536 382H882M536 408H888M536 434H919M536 460H767" class="cm-tl"/><text x="250" y="506" class="cm-pg">14</text><text x="750" y="506" class="cm-pg">15</text><path class="draw cm-hl" pathLength="1" data-at="0.3" d="M30 174H430"/><rect data-step="1" x="30" y="160" width="400" height="28" rx="4" class="cm-hide"/><g data-step="2"><path d="M30 174H430" class="cm-hl"/><path d="M36 174H420" class="cm-tl"/></g></svg>
+    </div>
+  </div>
+</section>
+
+<section class="slide cover noconcl" data-nologos id="s-xcn336">
+  <svg class="cm-logo" data-step="1" viewBox="0 0 256 256" width="190" height="190" role="img" aria-label="Egatari のロゴ">
+    <circle class="draw" pathLength="1" data-at="0" cx="112" cy="66" r="12.5" style="fill:none;stroke:var(--brand-sun);stroke-width:4"/>
+    <circle data-at="0.3" cx="112" cy="66" r="12.5" style="fill:var(--brand-sun)"/>
+    <path class="draw" pathLength="1" data-at="0.05" d="M80 107Q121 103 160 94Q170 92 163 102L78 184L110 151Q128 132 135 158L139 175Q146 197 168 183Q184 173 177 161L170 163" transform="translate(-1 2)" style="fill:none;stroke:var(--brand-ink);stroke-width:15;stroke-linecap:round;stroke-linejoin:round"/>
+    <path class="draw" pathLength="1" data-at="0.5" d="M84 40H40V152" style="fill:none;stroke:var(--brand-ink);stroke-width:15;stroke-linecap:square"/>
+    <path class="draw" pathLength="1" data-at="0.6" d="M172 216H216V104" style="fill:none;stroke:var(--brand-ink);stroke-width:15;stroke-linecap:square"/>
+  </svg>
+  <h1>絵が語り、人へ伝える</h1>
+  <div class="au"><span class="muted">egatari.org</span></div>
+</section>
+
+</div>
+</body>
+</html>
