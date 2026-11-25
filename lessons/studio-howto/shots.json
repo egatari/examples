@@ -158,29 +158,29 @@
     {
       "file": "images/presenter.png",
       "test": "tools/test-app.mjs --shots",
-      "app": "Egatari Studio 0.6.18 (6dead43c)",
-      "taken": "2026-11-22",
+      "app": "Egatari Studio 0.6.20-rc.3 (16b4b40b)",
+      "taken": "2026-11-25",
       "usedIn": "article/05.md — 発表する：発表者ビューとしおり",
       "label": "fig-presenter",
-      "sha256": "53c895e82c7f945c46f3c68d25ba98ecd1212e51015b2d26e6114011c7427b9a"
+      "sha256": "a8954ca306d58f4c27fe74168a8631184d34097c8ca0436920f36247b5c59f29"
     },
     {
       "file": "images/bookmark-bar-1280.png",
       "test": "tools/test-app-bookmark.mjs --shots（しおりの名前を「付録」にした写しで流した）",
-      "app": "Egatari Studio 0.6.19 (54556538)",
-      "taken": "2026-11-24",
+      "app": "Egatari Studio 0.6.20-rc.3 (16b4b40b)",
+      "taken": "2026-11-25",
       "usedIn": "article/05.md — 発表する：発表者ビューとしおり",
       "label": "fig-bookmark-bar",
-      "sha256": "9998fb903c5e6f13827de6c98b1e75efdfbb0eb54ac76203dbc133913bf13112"
+      "sha256": "c39f11bfda8905674b3dc45200f47b17121a025ad3bfce66a21ad1d5cc357734"
     },
     {
       "file": "images/bookmark-back-1280.png",
       "test": "tools/test-app-bookmark.mjs --shots（しおりの名前を「付録」にした写しで流した）",
-      "app": "Egatari Studio 0.6.19 (54556538)",
-      "taken": "2026-11-24",
+      "app": "Egatari Studio 0.6.20-rc.3 (16b4b40b)",
+      "taken": "2026-11-25",
       "usedIn": "article/05.md — 発表する：発表者ビューとしおり",
       "label": "fig-bookmark-back",
-      "sha256": "859aefa3f66ddf4c5b2c5d1d14c44250f4267e7b0a8e184b4af5fe5c18d73118"
+      "sha256": "2ae9b4814431160ad1a0656e5bed770201579a7f929927024a56e958fd052959"
     },
     {
       "file": "images/book-readin-1280.png",
