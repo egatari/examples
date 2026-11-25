@@ -1,0 +1,2 @@
+/* default（藍）を土台に、Egatari のロゴの色と、マーカーの黄（学習者向けの CM の「書ける」）を足す */
+:root { --brand-ink: #4A488E; --brand-sun: #D3381C; --brand-hl: #F2D14B; }
