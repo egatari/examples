@@ -1,0 +1,2 @@
+/* default（藍）を土台に、Egatari のロゴの色と、発表者ビューの小さな月の光る色を足す */
+:root { --brand-ink: #4A488E; --brand-sun: #D3381C; --brand-hl: #F2C230; }
