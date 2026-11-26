@@ -1,6 +1,6 @@
 {
   "v": 1,
-  "note": "画面の写しの記録。Egatari Studio の編集アプリの試験の撮影（--shots ほか）から取った。test が scripts/ のものは、再生専用に組んだこの見本をプレーヤーで撮った。どの画像も 256 色に減らしてある（sha256 は減らした後のもの）",
+  "note": "画面の写しの記録。Egatari Studio の編集アプリの試験の撮影（--shots ほか）から取った。test が scripts/ のものは、再生専用に組んだこの見本をプレーヤーで撮った。どの画像も 256 色に減らしてある（sha256 は減らした後のもの）。0.6.20 の 3 枚は 0.6.20-rc.3（16b4b40b）で撮った。rc.3 と 0.6.20 の間で編集アプリ・プレーヤーの差はなく、表示は同じ",
   "shots": [
     {
       "file": "images/welcome.png",
@@ -158,7 +158,7 @@
     {
       "file": "images/presenter.png",
       "test": "tools/test-app.mjs --shots",
-      "app": "Egatari Studio 0.6.20-rc.3 (16b4b40b)",
+      "app": "Egatari Studio 0.6.20 (93800817)",
       "taken": "2026-11-25",
       "usedIn": "article/05.md — 発表する：発表者ビューとしおり",
       "label": "fig-presenter",
@@ -167,7 +167,7 @@
     {
       "file": "images/bookmark-bar-1280.png",
       "test": "tools/test-app-bookmark.mjs --shots（しおりの名前を「付録」にした写しで流した）",
-      "app": "Egatari Studio 0.6.20-rc.3 (16b4b40b)",
+      "app": "Egatari Studio 0.6.20 (93800817)",
       "taken": "2026-11-25",
       "usedIn": "article/05.md — 発表する：発表者ビューとしおり",
       "label": "fig-bookmark-bar",
@@ -176,7 +176,7 @@
     {
       "file": "images/bookmark-back-1280.png",
       "test": "tools/test-app-bookmark.mjs --shots（しおりの名前を「付録」にした写しで流した）",
-      "app": "Egatari Studio 0.6.20-rc.3 (16b4b40b)",
+      "app": "Egatari Studio 0.6.20 (93800817)",
       "taken": "2026-11-25",
       "usedIn": "article/05.md — 発表する：発表者ビューとしおり",
       "label": "fig-bookmark-back",
